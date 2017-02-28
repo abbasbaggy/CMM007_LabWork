@@ -1,8 +1,18 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+
+</head>
 <body>
+
+
 <?php
 echo "My first PHP script!";
 ?>
+
+
+
 </body>
 </html>
