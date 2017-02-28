@@ -9,7 +9,8 @@
 
 
 <?php
-echo "My first PHP script!";
+echo "Hello world!";
+echo "Hello,"." "."world"."!";
 ?>
 
 
