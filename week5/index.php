@@ -12,7 +12,7 @@
 
 <?php
 
-$provisionedActivity = array(" sting Specs","Mugs","Sausage Rolls");
+$provisionedActivity = array("sting Specs","Mugs","Sausage Rolls");
 
 foreach ($provisionedActivity as $x){
     print "<p>$x</p>";
