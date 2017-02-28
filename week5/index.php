@@ -12,20 +12,13 @@
 
 <?php
 
-$mumberOfHobbits=4;
-switch($mumberOfHobbits){
-    case 1 :
-        echo"1 sad hobbit";
-        break;
-    case 2 :
-        echo"2 happy hobbits";
-        break;
-    case 3 :
-        echo"3 hobbits are a crowd";
-        break;
-    default:
-        echo"All the hobbits have gone home";
+$provisionedActivity = array(" sting Specs","Mugs","Sausage Rolls");
+
+foreach ($provisionedActivity as $x){
+    print "<p>$x</p>";
 }
+
+
 ?>
 
 
