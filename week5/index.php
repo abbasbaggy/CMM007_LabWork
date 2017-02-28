@@ -12,7 +12,7 @@
 
 <?php
 
-$mumberOfHobbits=2;
+$mumberOfHobbits=3;
 switch($mumberOfHobbits){
     case 1 :
         echo"1 sad hobbit";
