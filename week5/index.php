@@ -14,21 +14,16 @@
 
 $provisionedActivity = array("sting Specs","Mugs","Sausage Rolls");
 
-foreach ($provisionedActivity as $x){
-    print "<p>$x</p>";
-}
 
 
-echo$provisionedActivity[0];
-
-$provisionedActivity[2]="hugs";
-
-unset($provisionedActivity[3]);
 
 
-for($s= 1;$s<10;$s++)
+
+for($x= 1;$x<10;$x++)
 {
-    echo"<p>$provisionedActivity</p>";
+    foreach ($provisionedActivity as $x){
+        print "<p>$x</p>";
+    }
 }
 
 
