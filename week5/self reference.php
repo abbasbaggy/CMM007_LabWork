@@ -1,5 +1,14 @@
 
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href="helloprinter.php?subject=Earth&web=hello">Where would like to be</a>
+
+</body>
+</html>
+
 <?php
 
 /**
@@ -8,6 +17,6 @@
  * Date: 3/2/2017
  * Time: 10:29 PM
  */
-$query = $_GET['query'];
-$type = $_GET_['type'];
-echo'the query is'.$cat.'and the type is'.$type;
+
+
+
