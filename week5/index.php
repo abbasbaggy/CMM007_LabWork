@@ -19,7 +19,7 @@ $provisionedActivity = array("sting Specs","Mugs","Sausage Rolls");
 
 
 
-for($x= 1;$x<10;$x++)
+for($x= 1;$x<=10;$x++)
 {
     foreach ($provisionedActivity as $x){
         print "<p>$x</p>";
