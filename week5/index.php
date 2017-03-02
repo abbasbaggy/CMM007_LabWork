@@ -28,7 +28,7 @@ unset($provisionedActivity[3]);
 
 for($s= 1;$s<10;$s++)
 {
-    echo"<p>hello</p>";
+    echo"<p>$x</p>";
 }
 
 
