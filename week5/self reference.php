@@ -9,7 +9,7 @@
 
 <p><a href="helloprinter.php?mar=Mars&salute=Hello">Mars</a></p>
 
-<p><a href="helloprinter.php?anus=Uranus$name=hi&good=fine">Uranus</a></p>
+<p><a href="helloprinter.php?anus=Uranus&name=hi&good=fine">Uranus</a></p>
 </body>
 </html>
 
