@@ -9,4 +9,4 @@ echo  $_GET['subject']. $_GET[web];
 echo "<br>";
 echo $_GET["mar"]. $_GET[salute];
 echo "<br>";
-echo $_GET[anus]. $_GET[salute];
+echo $_GET[anus]. $_GET[name]. $_GET[good];
