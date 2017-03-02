@@ -5,4 +5,8 @@
  * Date: 3/2/2017
  * Time: 10:33 PM
  */
-echo "Study " . $_GET['subject']. $_GET[web];
+echo  $_GET['subject']. $_GET[web];
+echo "<br>";
+echo $_GET["mar"]. $_GET[salute];
+echo "<br>";
+echo $_GET[salute]. $_GET[anus];
