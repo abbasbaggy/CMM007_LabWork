@@ -3,22 +3,22 @@ form {
 }
 
 input[type=text], input[type=password] {
-    width: 100%;
+    width: 25%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    border: 2px  #ccc;
+    box-sizing: content-box;
 }
 
 button {
     background-color: burlywood;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 14px 10px;
+    margin: 8px 10px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
 }
 
 .cancelbtn {
@@ -33,8 +33,8 @@ button {
 }
 
 img.avatar {
-    width: 40%;
-    border-radius: 50%;
+    width: 20%;
+    border-radius: 20%;
 }
 
 .container {
@@ -53,6 +53,6 @@ span.psw {
         float: none;
     }
     .cancelbtn {
-        width: 100%;
+        width: 50%;
     }
 }

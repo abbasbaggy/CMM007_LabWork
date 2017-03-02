@@ -19,6 +19,17 @@ foreach ($provisionedActivity as $x){
 }
 
 
+echo$provisionedActivity[0];
+
+$provisionedActivity[2]="hugs";
+
+unset($provisionedActivity[3]);
+
+
+for(s==1; s<10;s++) {
+    echo"<p>hello</p>";
+}
+
 
 ?>
 
