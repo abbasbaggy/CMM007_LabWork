@@ -7,7 +7,7 @@
  */
 $fname = $_POST["fname"];
 $sname =$_POST["sname"];
-$gender = $_POST["submit"];
+$gender = $_POST["value"];
 $power =$_POST["power"];
 
 echo "Firstname ". $fname."surname ". $sname."Gender ". $gender. "My super Powers ";
