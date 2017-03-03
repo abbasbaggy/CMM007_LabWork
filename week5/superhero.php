@@ -10,4 +10,4 @@ $sname =$_POST["sname"];
 $gender = $_POST["value"];
 $power =$_POST["power"];
 
-echo "Firstname ". $fname." surname ". $sname." Gender ". $value. "My super Powers ".$power;
+echo "Firstname ". $fname." surname ". $sname." Gender ". $gender. "My super Powers ".$power;
