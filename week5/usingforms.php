@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>using forms</head>
+<head>
+    <Title>using forms</Title>
+        </head>
 
 <body>
 
