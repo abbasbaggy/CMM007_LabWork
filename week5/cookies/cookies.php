@@ -9,3 +9,7 @@ $username="abbas";
 $passowrd="mysecretpassword";
 
 echo $username. " ". $passowrd;
+
+setcookie($username,$passowrd);
+
+setcookie("access_level",$username);
