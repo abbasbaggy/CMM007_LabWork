@@ -6,7 +6,7 @@
  * Time: 9:38 PM
  */
 
-echo $username;
+echo $_COOKIE[$access_level];
 
 
 function displayAccessLevelInformation($accessLevel){
