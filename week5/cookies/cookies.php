@@ -8,3 +8,4 @@
 $username="abbas";
 $passowrd="mysecretpassword";
 
+echo $username. " ". $passowrd;
