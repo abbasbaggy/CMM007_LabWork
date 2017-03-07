@@ -5,7 +5,7 @@
  * Date: 07/03/2017
  * Time: 16:27
  */
-require_once 'dbconnect'.'db_connect.php';
+require_once 'db_connect.php';
 
 // create a SQL query as a string
 $sql_query = "SELECT * FROM superheros WHERE superpower LIKE '%laser%'";
