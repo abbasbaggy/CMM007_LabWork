@@ -5,17 +5,17 @@
  * Date: 3/6/2017
  * Time: 9:38 PM
  */
+$user="abbas";
+$pass="mysecret";
 
-echo $_COOKIE[$access_level];
+if (isset($_COOKIE[["username"]) && isset($_COOKIE["password")) {
 
-
-function displayAccessLevelInformation($accessLevel){
-    if($access_level="standarduser"){
-        echo"<p>You are currently logged in as a standard user</p>";
+    if (($_POST["username"] != $user) || ($_POST["password"] != md5($pass))) {
+        header("Location: login.html");
+    } else {
+        echo "Welcome back ' . $_COOKIE ["username"];
     }
-    elseif ($access_level="root"){
-        echo"<p>You are currentlyloggedin as a root user</p>";
-        echo"<p>You have access to additional administrative features</p>";
 
-    }
+} else {
+    header("location: cookies.html");
 }

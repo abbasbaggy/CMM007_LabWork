@@ -6,13 +6,14 @@
 </head>
 <body>
 
-<form action="cookies.php">
+<h2>User Login </h2>
+<form name="login" action="cookies.php" method="post">
 
-    <label>Username</label><br>
-    <input type="text" name="mike"><br>
-    <label>Login</label><br>
-    <input type="text" name="mysecretpassword">
-    <input type="submit">
+
+   Username: <input type="text" name="username"><br>
+   Password:  <input type="text" name="password"><br>
+    Remember Me: <input type="checkbox" name="rememberme" value="1"><br>
+    <input type="submit" name="submit" value="login">
 </form>
 
 </body>
