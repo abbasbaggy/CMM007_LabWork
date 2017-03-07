@@ -13,8 +13,8 @@ if (isset($_POST["username"]) && isset($_POST["password"])){
 
         if (isset($_POST["rememberme"])) {
 
-            setcookie("username", $_POST["username"], time() + 60 * 60 * 24 * 365);
-            setcookie("password", $_POST["password"], time() + 60 * 60 * 24 * 365);
+            setcookie("username", $_POST["username"], time() + 60 * 60 * 24 * 365, "/account", "cookies");
+            setcookie("password", $_POST["password"], time() + 60 * 60 * 24 * 365, "/account", "cookies");
 
         } else {
 
