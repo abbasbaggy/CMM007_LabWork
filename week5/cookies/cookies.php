@@ -21,7 +21,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])){
             setcookie("username", $_POST["username"], false);
             setcookie("password", md5($_POST["password"]), false);
         }
-        header("location: cookie.php");
+        header("location: homepage.php");
 
     } else{
         echo"Usernam/password invalid";

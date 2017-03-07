@@ -8,14 +8,16 @@
 $user="abbas";
 $pass="mysecret";
 
-if (isset($_COOKIE[["username"]) && isset($_COOKIE["password")) {
-
-    if (($_POST["username"] != $user) || ($_POST["password"] != md5($pass))) {
-        header("Location: login.html");
-    } else {
-        echo "Welcome back ' . $_COOKIE ["username"];
+if (isset($_COOKIE[["username"]] && isset($_COOKIE["password"]))){
+    if (($_POST["username"] !=$user)  || ($_POST["password"] !=md5($pass))){
+        header("location: cookies.html");
+    } else{
+        echo "welcome back". $_COOKIE["username"];
     }
 
-} else {
+} else{
     header("location: cookies.html");
+
 }
+
+
