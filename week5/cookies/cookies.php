@@ -9,12 +9,12 @@ $user="abbas";
 $pass="mysecret";
 
 if (isset($_POST["username"]) && isset($_POST["password"])){
-    if (($_POST["username"] == $user) &&($_POST["passowrd"] ==$pass)) {
+    if (($_POST["username"] == $user) &&($_POST["password"] ==$pass)) {
 
         if (isset($_POST["rememberme"])) {
 
-            setcookie("username", $_POST["username"], time() + 60 * 60 * 24 * 365);
-            setcookie("password", $_POST["password"], time() + 60 * 60 * 24 * 365);
+            setcookie("username", $_POST["username"], time() + 60 * 60 * 24 * 365, "/account");
+            setcookie("password", $_POST["password"], time() + 60 * 60 * 24 * 365, "/account");
 
         } else {
 
@@ -24,7 +24,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])){
         header("location: homepage.php");
 
     } else{
-        echo"Usernam/password invalid";
+        echo"Username/password invalid";
     }
 } else{
     echo "you must supply a username and password.";
