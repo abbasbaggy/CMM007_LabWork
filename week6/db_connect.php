@@ -7,7 +7,7 @@
  */
 
 $connectstr_dbhost = '';
-$connectstr_dbname = 'myfirstpage';
+$connectstr_dbname = '';
 $connectstr_dbusername = '';
 $connectstr_dbpassword = '';
 foreach ($_SERVER as $key => $value) {
