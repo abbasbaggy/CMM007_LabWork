@@ -27,4 +27,4 @@ if (!$link) {
     exit;
 }
 
-echo "$connectstr_dbhost","$connectstr_dbname";
+echo "$connectstr_dbhost","$connectstr_dbname","$connectstr_dbusername","$connectstr_dbpassword";
