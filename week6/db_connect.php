@@ -7,7 +7,7 @@
  */
 
 $connectstr_dbhost = '';
-$connectstr_dbname = '';
+$connectstr_dbname = 'myfisrtpage.marvelmovies';
 $connectstr_dbusername = '';
 $connectstr_dbpassword = '';
 foreach ($_SERVER as $key => $value) {
