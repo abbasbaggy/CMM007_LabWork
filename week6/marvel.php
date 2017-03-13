@@ -8,7 +8,7 @@
 include("db_connect.php");
 
 // create a SQL query as a string
-$sql_query = "SELECT * FROM myfisrtpage.marvelmovies";
+$sql_query = "SELECT * FROM localdb.marvelmovies";
 // execute the SQL query
 $result=mysqli_query($db,$sql_query);
 
