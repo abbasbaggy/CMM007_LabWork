@@ -8,7 +8,7 @@
 include ('db_connect.php');
 
 // create a SQL query as a string
-$sql_query = "SELECT * FROM superheros  WHERE superpower LIKE '%laser%'";
+$sql_query = "SELECT * FROM marvelmovies";
 // execute the SQL query
 $result = $db->query($sql_query);
 
@@ -20,7 +20,7 @@ while($row = $result->fetch_array()){
 
 while($row = $result->fetch_array()){
     // print out fields from row of data
-    echo "<p>” . $row{'superheroName'} . “</p>";
+    echo "<p>” . $row{'marvelMovies'} . “</p>";
 }
 
 $result->close();
