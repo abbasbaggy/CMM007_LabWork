@@ -10,7 +10,7 @@ include("db_connect.php");
 // create a SQL query as a string
 $sql_query = "SELECT * FROM marvelmovies";
 // execute the SQL query
-$result=mysqli_query($db,$sql_query);
+$result=mysqli_query($link,$sql_query);
 
 
 // iterate over $result object one $row at a time
