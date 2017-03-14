@@ -17,7 +17,7 @@ $result=mysqli_query($link,$sql_query);
 // use fetch_array() to return an associative array
 while($row = $result->fetch_array()){
 // process the $row
-    $movieTitle =$row['title'];
+    $movieTitle =$row['notes'];
     echo "<p>" .$movieTitle. "</p>";
 }
 
