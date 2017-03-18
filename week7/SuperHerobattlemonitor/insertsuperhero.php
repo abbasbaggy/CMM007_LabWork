@@ -5,7 +5,7 @@
  * Date: 3/17/2017
  * Time: 4:11 PM
  */
-include ("db_connect.php");
+include("db_connect.php");
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];

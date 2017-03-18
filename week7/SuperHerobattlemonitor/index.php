@@ -18,7 +18,7 @@
 </ul>
 <ul>
 <?php
-include ("db_connect.php");
+include("db_connect.php");
 $sql_query = "SELECT * FROM superheros";
 $result = $link->query($sql_query);
 while($row = $result->fetch_array())
