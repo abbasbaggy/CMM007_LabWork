@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
 <?php
-
-include ("db_connect.php");
+/**
+ * Created by PhpStorm.
+ * User: Abbas
+ * Date: 3/15/2017
+ * Time: 8:54 AM
+ */
+include("db_connect.php");
 
 // create a SQL query as a string
 $sql_query = "SELECT * FROM marvelmovies";
@@ -20,12 +17,6 @@ $result=mysqli_query($link,$sql_query);
 // use fetch_array() to return an associative array
 while($row = $result->fetch_array()){
 // process the $row
-$movieTitle =$row['title'];
-echo "<p>" .$movieTitle. "</p>";
+    $movieTitle =$row['notes'];
+    echo "<p>" .$movieTitle. "</p>";
 }
-
-
-?>
-
-</body>
-</html>
