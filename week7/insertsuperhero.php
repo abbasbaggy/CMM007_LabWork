@@ -13,7 +13,7 @@ $superpower = $_POST["superpower"];
 
 $sql = "INSERT INTO superheros {'firstName, lastName, mainSuper'} VALUES{'$firstname', '$lastname', '$superpower'}";
 
-if (mysqli_query($link, $sql)){
+if (mysqli_query($link, $sql_query)){
 } else {
     echo "ERROR: ". $sql. "<br>" . mysqli_error($link);
 }
