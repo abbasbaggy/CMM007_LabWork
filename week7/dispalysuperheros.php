@@ -19,7 +19,7 @@
     {
         $firstname = $row['firstName'];
         $lastname = $row['lastName'];
-        $mainSuperpower = $row['mainSuperpower'];
+        $mainSuperpower = $row['mainSuper'];
         echo "<article>
                 <h3> {$firstname} {$lastname} </h3>
                 <p>This is superheros main power is <strong>{$mainSuperpower}</strong></p>

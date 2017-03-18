@@ -26,7 +26,7 @@
         {
             $firstname = $row['firstName'];
             $lastname = $row['lastName'];
-            $mainSuperpower = $row['mainSuperPower'];
+            $mainSuperpower = $row['mainSuper'];
             $villanFought = $row['villanfought'];
             echo "<article>
             <p> The Superhero known as <strong>{$firstname} {$lastname}</strong> recently fought <strong>{$villanFought}</strong> using
