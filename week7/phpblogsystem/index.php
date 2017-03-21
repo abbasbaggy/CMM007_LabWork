@@ -5,14 +5,14 @@
  * Date: 3/18/2017
  * Time: 11:20 PM
  */
-define('INCLUDE_DIR', dirname(__FILE__). '/inc');
+define('INCLUDE_DIR', dirname(__FILE__) . '/inc');
 
 $rules = array(
     //main pages
     'about' => "/about",
     'contactus' => "/contactus",
     'blog' => "/blog",
-    'blog_article' => "/blog/(?'blogID'[\w\-]+",
+    'blog_article' => "/blog/(?'blogID'[\w\-]+)",
 
     //Admin pages
     'login' => "/login",
