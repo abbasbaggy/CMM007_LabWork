@@ -9,18 +9,18 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 
 $rules = array(
     //main pages
-    'about' => "/about",
-    'contactus' => "/contactus",
-    'blog' => "/blog",
-    'blog_article' => "/blog/(?'blogID'[\w\-]+)",
+    "about" => "/about",
+    "contactus" => "/contactus",
+    "blog" => "/blog",
+    "blog_article" => "/blog/(?'blogID'[\w\-]+)",
 
     //Admin pages
-    'login' => "/login",
-    'create_article' => "/createarticle",
-    'logout' => "/logout",
+    "login" => "/login",
+    "create_article" => "/createarticle",
+    "logout" => "/logout",
 
     //Home page
-    'home' => "/"
+    "home" => "/"
 );
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
 $uri ='/' . trim(str_replace($uri, '', $_SERVER['REQUEST_URI']), '/');
