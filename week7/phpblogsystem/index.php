@@ -12,7 +12,7 @@ $rules = array(
     'about' => "/about",
     'contactus' => "/contactus",
     'blog' => "/blog",
-    'blog_article' => "/blog/(?'blogID'[\W\-]+)",
+    'blog_article' => "/blog/(?'blogID'[\w\-]+)",
 
     //Admin pages
     'login' => "/login",
