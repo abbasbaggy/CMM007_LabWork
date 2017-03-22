@@ -1,5 +1,5 @@
 <?
-get_included_files('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
+DEFINE('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 
 $rules = array(
     //main pages
@@ -16,6 +16,7 @@ $rules = array(
     //Home page
     'home' => "/"
 );
+
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
 $uri = '/' . trim(str_replace($uri, ' ', $_SERVER['REQUEST_URI']), '/');
 $uri = urldecode($uri);
