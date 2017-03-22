@@ -1,6 +1,6 @@
 <?php
-define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
-define('INCLUDE_DIR', true);
+define(INCLUDE_DIR, dirname(__FILE__) . '/inc/');
+
 
 $rules = array(
     //main pages
