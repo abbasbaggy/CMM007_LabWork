@@ -1,11 +1,5 @@
 <?
-/**
- * Created by PhpStorm.
- * User: Abbas
- * Date: 3/18/2017
- * Time: 11:20 PM
- */
-define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
+get_included_files('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 
 $rules = array(
     //main pages
