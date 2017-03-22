@@ -5,7 +5,7 @@
  * Date: 3/18/2017
  * Time: 11:51 PM
  */
-include ("script/header.php");
+include ("scripts/header.php");
 
 echo"
 <main>
@@ -13,4 +13,4 @@ echo"
 <p>Send me an email at babbage@babbage-labs.com</p>
 </main>";
 
-include("script/footer.php");
+include("scripts/footer.php");

@@ -5,7 +5,7 @@
  * Date: 3/18/2017
  * Time: 11:50 PM
  */
-include ("script/header.php");
+include ("scripts/header.php");
 echo"
 <main>
 <h2>About me</h2>
