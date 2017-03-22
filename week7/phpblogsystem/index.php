@@ -1,5 +1,5 @@
 <?php
-define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
+require( dirname(__FILE__) . '/inc/');
 
 $rules = array(
     //main pages
