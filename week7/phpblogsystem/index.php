@@ -1,5 +1,5 @@
 <?
-DEFINE('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
+get_defined_functions('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 
 $rules = array(
     //main pages
