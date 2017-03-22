@@ -14,4 +14,3 @@ see all of my insights and wonderful things</p>
 </main>
 ";
 include ("scripts/footer.php");
-?>
