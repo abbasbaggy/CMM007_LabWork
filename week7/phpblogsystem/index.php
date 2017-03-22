@@ -1,7 +1,7 @@
 <?php
 define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 define('INCLUDE_DIR', true);
-require '/inc/';
+
 $rules = array(
     //main pages
     'about' => "/about",
