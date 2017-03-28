@@ -1,16 +1,16 @@
 <?php
 
-define('INCLUDE_DIR', dirname(__FILE__) . '/inc');
+define('INCLUDE_DIR', dirname( '. /inc/'));
 
 $rules = array(
     //main pages
-    "about" => "/about.php",
-    "contactus" => "/contactus.php",
-    "blog" => "/blog.php",
+    'about' => "/about",
+    'contactus' => "/contactus",
+    'blog' => "/blog",
     'blog_article' => "/blog/(?'blogID'[\w\-]+)",
 
     //Admin pages
-    "login" => "/login",
+    'login' => "/login",
     'create_article' => "/createarticle",
     'logout' => "/logout",
 
