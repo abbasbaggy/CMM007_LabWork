@@ -4,13 +4,13 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/inc');
 
 $rules = array(
     //main pages
-    'about' => "/about",
-    'contactus' => "/contactus",
-    'blog' => "/blog",
+    "about" => "/about.php",
+    "contactus" => "/contactus.php",
+    "blog" => "/blog.php",
     'blog_article' => "/blog/(?'blogID'[\w\-]+)",
 
     //Admin pages
-    'login' => "/login",
+    "login" => "/login",
     'create_article' => "/createarticle",
     'logout' => "/logout",
 
