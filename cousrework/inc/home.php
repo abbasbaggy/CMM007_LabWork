@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Created by PhpStorm.
  * User: Abbas
@@ -18,6 +18,7 @@ if (!isset($_SESSION['user']) ) {
 $row =$link->query($sql_query);
 $userRow=mysqli_num_rows($row);
  ?>
+
 <!DOCTYPE html>
 <html>
 <head>
