@@ -70,7 +70,7 @@ if ( isset($_POST['btn-signup']) ) {
     //no erro continue
 }if (!$error) {
 
-    $sql_query = "INSERT INTO users(userName, userEmail, userPass) VALUES ('$name','$email', '$password')";
+    $sql_query = "INSERT INTO users(userName,userEmail,userPass) VALUES ('$name','$email','$password')";
     $result =  $link->query($sql_query);
 
     if ($result) {
