@@ -14,8 +14,8 @@ if (!isset($_SESSION['user']) ) {
     exit;
 }
  //User logged in details
- $res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
- $userRow=mysql_fetch_array(res);
+ $res=mysqli_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
+ $userRow=mysqli_fetch_array(res);
  ?>
 <!DOCTYPE html>
 <html>
