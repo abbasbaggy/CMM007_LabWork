@@ -49,7 +49,7 @@ if ( isset($_POST['btn-signup']) ) {
         //check email
         $sql_query = "SELECT userEmail FROM users WHERE userEmail ='$email'";
         $result = $link->query($sql_query);
-        $count = $link->query($result);
+        $count = mysqli_num_rows(($result);
         if($count!=0){
             $error = true;
             $emailError = "Provided Email is already in use.";
