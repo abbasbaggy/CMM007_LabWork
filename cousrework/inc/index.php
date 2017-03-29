@@ -49,7 +49,7 @@ if( isset($_POST['btn-login']) ) {
 
         $sql_query = "SELECT userId, userName, userPass FROM users WHERE userEmail='$email'";
         $row= $link->query($sql_query);
-        $count =$link->num_row; // if uname/pass correct it returns must be 1 row
+        $count = $sql_query; // if uname/pass correct it returns must be 1 row
 
         if( $count == 1 && $row['userPass']==$password ) {
             $_SESSION['user'] = $row['userId'];
