@@ -16,7 +16,7 @@ if (!isset($_SESSION['user']) ) {
  //User logged in details
  $sql_query="SELECT * FROM users WHERE userId=".$_SESSION['user'];
 $row =$link->query($sql_query);
-$userRow=mysqli_fetch_array($row);
+$userRow=mysqli_num_rows($row);
  ?>
 <!DOCTYPE html>
 <html>
