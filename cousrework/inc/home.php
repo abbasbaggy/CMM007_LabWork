@@ -24,7 +24,7 @@ $userRow=mysqli_num_rows($row);
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Welcome - <?php echo $userRow['userEmail']; ?></title>
-    <link rel="stylesheet" href="assets/css/bootsrap.min.css" type="text/css"  />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootsrap.min.css" type="text/css"  />
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
@@ -78,8 +78,8 @@ $userRow=mysqli_num_rows($row);
 
 </div>
 
-<script src="assets/jquery-1.11.3-jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 </html>
