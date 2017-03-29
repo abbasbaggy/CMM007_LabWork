@@ -51,7 +51,7 @@ if( isset($_POST['btn-login']) ) {
         $row=$link->query($sql_query);
         $count = mysqli_num_rows($row); // if uname/pass correct it returns must be 1 row
 
-        if( $count == 1 && $row['userPass']==$password ) {
+        if( $count == 1 && $row['userPass']==$password ) {  ini_set('display_errors', 1);
             $_SESSION['user'] = $row['userId'];
             header("Location: home.php");
         } else {
