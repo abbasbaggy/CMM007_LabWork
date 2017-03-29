@@ -47,9 +47,9 @@ if ( isset($_POST['btn-signup']) ) {
             $emailError = "Please enter valid email address.";
     } else {
         //check email
-        $query = "SELECT userEmail FROM users WHERE userEmail=";
-        $result = mysql_query($query);
-        $count = mysql_num_rows($result);
+        $sql_query = "SELECT userEmail FROM users WHERE userEmail=$email";
+        $result = $link->query($sql_query);
+        $count = $result;
         if($count!=0){
             $error = true;
             $emailError = "Provided Email is already in use.";
@@ -70,10 +70,10 @@ if ( isset($_POST['btn-signup']) ) {
     //no erro continue
 }if (!$error) {
 
-    $query = "INSERT INTO users(userName, userEmail, userPass) VALUES ('$name','$email', '$password')";
-    $res =  mysql_query($query);
+    $sql_query = "INSERT INTO users(userName, userEmail, userPass) VALUES ('$name','$email', '$password')";
+    $result =  $link->query($sql_query);
 
-    if ($res) {
+    if ($result) {
         $errTyp = "success";
         $errMSG = "Successfully registered, you may login now";
         unset($name);
