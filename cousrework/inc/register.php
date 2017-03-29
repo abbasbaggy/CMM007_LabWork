@@ -47,9 +47,9 @@ if ( isset($_POST['btn-signup']) ) {
             $emailError = "Please enter valid email address.";
     } else {
         //check email
-        $sql_query = "SELECT userEmail FROM users WHERE userEmail=$email";
+        $sql_query = "SELECT * FROM `users` WHERE userEmail =$email";
         $result = $link->query($sql_query);
-        $count = mysql_num_rows($result);
+        $count = $result;
         if($count!=0){
             $error = true;
             $emailError = "Provided Email is already in use.";
