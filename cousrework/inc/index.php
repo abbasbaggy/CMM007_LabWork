@@ -45,14 +45,14 @@ if( isset($_POST['btn-login']) ) {
     // if there's no error, continue to login
     if (!$error) {
 
-        $password =  $pass; // password hashing using SHA256
+        $password = $pass; // password hashing using SHA256
 
         $sql_query ="SELECT userId, userName, userPass FROM users WHERE userEmail='$email'";
         $res= $link->query($sql_query);
         $row= $res->fetch_array();
         $count = $row->num_rows; // if uname/pass correct it returns must be 1 row
 
-        if( $count == 1 && $row['userPass']==$password ) {
+        if( $count == 1 && $row['userPass']== $password ) {
             $_SESSION['user'] = $row['userId'];
             header("Location: home.php");
         } else {
