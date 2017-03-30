@@ -47,7 +47,7 @@ if( isset($_POST['btn-login']) ) {
 
         $password =  $pass; // password hashing using SHA256
 
-        $query =$link->query("SELECT userId, userName, userPass FROM users WHERE userEmail='$email'");
+        $query ="SELECT userId, userName, userPass FROM users WHERE userEmail='$email'";
         $row= $query->fetch_array();
         $count = $row->num_rows; // if uname/pass correct it returns must be 1 row
 
