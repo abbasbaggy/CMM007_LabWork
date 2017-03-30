@@ -65,7 +65,7 @@ if ( isset($_POST['btn-signup']) ) {
     }
 
     //pass encryption
-    $password = hash('sha256', $pass);
+    $password = $pass;
 
     //no erro continue
 }if (!$error) {
