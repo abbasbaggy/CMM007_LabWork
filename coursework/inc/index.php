@@ -54,7 +54,7 @@ if( isset($_POST['btn-login']) ) {
 
         if(pawword_verify($password, $row['userPass']&& $count == 1)) {
             $_SESSION['user'] = $row['userId'];
-            header("Location: home.php");
+            header("Location: coursework/inc/home.php");
         } else {
             $errMSG = "Incorrect Credentials, Try again...";
         }
