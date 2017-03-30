@@ -52,7 +52,7 @@ if( isset($_POST['btn-login']) ) {
         $row= $res->fetch_array();
         $count = $row->num_rows; // if uname/pass correct it returns must be 1 row
 
-        if( $count == 1 && $row['userPass']== .$password ) {
+        if( $count == 1 && $row['userPass']== $password ) {
             $_SESSION['user'] = $row['userId'];
             header("Location: home.php");
         } else {
