@@ -12,12 +12,10 @@ require_once 'db_connect.php';
 if (!isset($_SESSION['user']) ) {
     header("location: index.php");
     exit;
-}
- //User logged in details
- $sql_query="SELECT * FROM users WHERE userId=".$_SESSION['user'];
-$row =$link->query($sql_query);
-$userRow=$row->num_rows;
- ?>
+}?>
+    //User logged in details
+
+
 
 <!DOCTYPE html>
 <html>
