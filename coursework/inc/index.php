@@ -48,11 +48,11 @@ if( isset($_POST['btn-login']) ) {
         $password = $pass; // password hashing using SHA256
 
         $sql_query ="SELECT userId, userName, userPass FROM users WHERE userEmail='$email'";
-        $res= $link->query($sql_query);
+        $res= mysqli_query($link, $sql_query);
         $row= $res->fetch_array();
-        $count = $row->num_rows; // if uname/pass correct it returns must be 1 row
+         // if uname/pass correct it returns must be 1 row
 
-        if(pawword_verify($password, $row['userPass']&& $count == 1)) {
+        if( $row['userPass']&& mysqli_num_rows($res) == 1) {
             $_SESSION['user'] = $row['userId'];
             header("Location: home.html");
         } else {

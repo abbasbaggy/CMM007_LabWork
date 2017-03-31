@@ -16,7 +16,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Welcome Home</title>
+    <title>Welcome Exclusive Fashion</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
