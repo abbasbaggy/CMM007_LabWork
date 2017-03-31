@@ -54,7 +54,7 @@ if( isset($_POST['btn-login']) ) {
 
         if( $row['userPass']&& mysqli_num_rows($res) == 1) {
             $_SESSION['user'] = $row['userId'];
-            header("Location: home.html");
+            header("Location: home.php");
         } else {
             $errMSG = "Incorrect Credentials, Try again...";
         }
