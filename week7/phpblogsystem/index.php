@@ -15,7 +15,7 @@ $rules = array(
     'logout'=>"/logout",
 
     //Home page
-    'home'=>"../"
+    'home'=>"/"
 );
 
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
@@ -24,7 +24,7 @@ $uri = urldecode($uri);
 
 foreach ($rules as $action => $rule) {
     if (preg_match('~^' . $rule . '$~i', $uri, $params)) {
-        include(INCLUDE_DIR . $action . '.php');
+        include(INCLUDE_DIR('./inc/'). $action . '.php');
         exit();
     }
 }
