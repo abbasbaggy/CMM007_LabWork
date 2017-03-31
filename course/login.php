@@ -51,9 +51,6 @@ if (isset($_POST['username'])){
         </form>
         <p>Not registered yet? <a href='registration.php'>Register Here</a></p>
 
-        <br /><br />
-        <a href="http://www.allphptricks.com/simple-user-registration-login-script-in-php-and-mysqli/">Tutorial Link</a> <br /><br />
-        For More Web Development Tutorials Visit: <a href="http://www.allphptricks.com/">AllPHPTricks.com</a>
     </div>
 <?php } ?>
 
