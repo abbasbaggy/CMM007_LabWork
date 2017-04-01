@@ -18,7 +18,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
     (`trn_date`,`name`,`age`,`submittedby`)values
     ('$trn_date','$name','$age','$submittedby')";
     mysqli_query($con,$ins_query)
-    or die(mysql_error());
+    or die(mysqli_error());
     $status = "New Record Inserted Successfully.
     </br></br><a href='view.php'>View Inserted Record</a>";
 }
@@ -43,7 +43,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
         <h1>Please Insert Your Measurements</h1>
         <form name="form" method="post" action="">
             <input type="hidden" name="new" value="1" />
-            <p><input type="text" name="Burst" placeholder="Enter Burst size " spellcheck="true" /></p>
+            <p><input type="text" name="Burst" placeholder="Enter Burst size " checked /></p>
             <p><input type="text" name="Waist" placeholder="Enter Waist size" required /></p>
             <p><input type="text" name="Hips" placeholder="Enter Hips size" required /></p>
             <p><input type="text" name="backWidth" placeholder="Enter back width" required /></p>
