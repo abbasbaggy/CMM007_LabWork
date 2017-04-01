@@ -11,7 +11,7 @@ include("auth.php");
 $status = "";
 if(isset($_POST['new']) && $_POST['new']==1){
     $trn_date = date("Y-m-d H:i:s");
-    $name =$_REQUEST['name'];
+    $name =$_REQUEST['burst'];
     $age = $_REQUEST['age'];
     $submittedby = $_SESSION["username"];
     $ins_query="insert into new_record
@@ -35,11 +35,11 @@ if(isset($_POST['new']) && $_POST['new']==1){
     <h2> Sample for header</h2>
 </header>
 <body>
-<div class="form">
+<div class="form2">
     <p><a href="dashboard.php">Dashboard</a>
         | <a href="view.php">View Records</a>
         | <a href="logout.php">Logout</a></p>
-    <div class="form2">
+    <div>
         <h1>Please Insert Your Measurements</h1>
         <form name="form" method="post" action="">
             <input type="hidden" name="new" value="1" />
