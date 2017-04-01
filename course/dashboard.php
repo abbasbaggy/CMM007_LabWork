@@ -20,7 +20,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
     <title>Exclusive fashion- ur logged in</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<header>
 <div class="form">
     <p>Tailoring Design</p>
     <p><a href="index.php">Home</a></p>
@@ -30,5 +30,5 @@ include("auth.php"); //include auth.php file on all secure pages ?>
 
 
 </div>
-</body>
+</header>
 </html>
