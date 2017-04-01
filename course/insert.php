@@ -39,7 +39,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
     <p><a href="dashboard.php">Dashboard</a>
         | <a href="view.php">View Records</a>
         | <a href="logout.php">Logout</a></p>
-    <div class="form">
+    <div class="row">
         <h1>Please Insert Your Measurements</h1>
         <form name="form" method="post" action="">
             <input type="hidden" name="new" value="1" />
