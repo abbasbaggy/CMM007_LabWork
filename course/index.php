@@ -20,6 +20,10 @@ include("auth.php"); //include auth.php file on all secure pages ?>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+<header>
+    <h1>header sample</h1>
+</header>
+<main>
 <div class="form">
     <p>Welcome <?php echo $_SESSION['username']; ?>!</p>
     <p>This is secure area.</p>
@@ -28,5 +32,6 @@ include("auth.php"); //include auth.php file on all secure pages ?>
 
 
 </div>
+</main>
 </body>
 </html>
