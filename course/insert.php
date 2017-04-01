@@ -43,7 +43,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
         <h1>Please Insert Your Measurements</h1>
         <form name="form" method="post" action="">
             <input type="hidden" name="new" value="1" />
-            <p><input type="text" name="Burst" placeholder="Enter Burst size " required /></p>
+            <p><input type="text" name="Burst" placeholder="Enter Burst size " /></p>
             <p><input type="text" name="Waist" placeholder="Enter Waist size" required /></p>
             <p><input type="text" name="Hips" placeholder="Enter Hips size" required /></p>
             <p><input type="text" name="backWidth" placeholder="Enter back width" required /></p>
@@ -60,7 +60,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
             <p><input type="text" name="WaistHip" placeholder="Enter Waist to Hip size" required /></p>
             <p><input type="text" name="shoulderWaist" placeholder="Enter Front shoulder to waist" required /></p>
             <p><input type="text" name="outsideLeg" placeholder="Enter outside leg size" required /></p>
-            <p><input type="number" name="insideLeg" placeholder="Enter inside leg size" required /></p>
+            <p><input type="" name="insideLeg" placeholder="Enter inside leg size" required /></p>
             <p><input name="submit" type="submit" value="Submit" /></p>
         </form>
         <p style="color:#FF0000;"><?php echo $status; ?></p>
