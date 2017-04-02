@@ -6,8 +6,8 @@
  * Time: 12:29 AM
  */
 
-require('../db.php');
-include("../auth.php");
+require('db.php');
+include("auth.php");
 $status = "";
 
 if (isset($_POST['new']) && $_POST['new'] == 1) {
@@ -20,7 +20,7 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
     ('$trn_date','$name','$age','$submittedby')";
     mysqli_query($con, $ins_query) or die(mysqli_error());
     $status = "New Record Inserted Successfully.
-    </br></br><a href='../view.php'>View Inserted Record</a>";
+    </br></br><a href='view.php'>View Inserted Record</a>";
 }
 
 ?>
@@ -30,7 +30,7 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
 
     <meta charset="utf-8">
     <title>Insert New Measurement</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -42,7 +42,7 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
 <body>
 <div class="form">
     <p><a href="dashboard.php">Dashboard</a>
-        | <a href=view.php">View Records</a>
+        | <a href="view.php">View Records</a>
         | <a href="logout.php">Logout</a></p>
 </div>
 
