@@ -52,17 +52,21 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
         <form class="form-inline" name="form" method="post" action="">
            <div class="form-group">
             <input type="hidden" name="new" value="1" />
-
+<p>
             <input type="text" name="Burst" placeholder="Enter Burst size " checked />
             <input type="text" name="Waist" placeholder="Enter Waist size" required />
             <input type="text" name="Hips" placeholder="Enter Hips size" required />
             <input type="text" name="backWidth" placeholder="Enter back width" required />
+</p>
 
-            <p><input type="text" name="FrontChest" placeholder="Enter Front Chest" required /></p>
-            <p><input type="text" name="Shoulder" placeholder="Enter Shoulder size"  /></p>
-            <p><input type="text" name="NeckSize" placeholder="Enter Necksize" required /></p>
-            <p><input type="text" name="Sleeve" placeholder="Enter Sleeve size" required /></p>
-            <p><input type="text" name="UnderBusrt" placeholder="Under bust size" required /></p>
+<p>
+            <input type="text" name="FrontChest" placeholder="Enter Front Chest" required />
+            <input type="text" name="Shoulder" placeholder="Enter Shoulder size"  />
+            <input type="text" name="NeckSize" placeholder="Enter Necksize" required />
+            <input type="text" name="Sleeve" placeholder="Enter Sleeve size" required />
+           </p>
+
+               <p><input type="text" name="UnderBusrt" placeholder="Under bust size" required /></p>
             <p><input type="text" name="Wrist" placeholder="Enter Wrist size" required /></p>
             <p><input type="text" name="UpperArm" placeholder="Enter Upper Arm size" required /></p>
             <p><input type="text" name="Calf" placeholder="Enter Calf size" required /></p>
