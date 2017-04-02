@@ -51,7 +51,7 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
 
         <form class="form-inline" name="form" method="post" action="">
            <div class="form-group">
-               <img src="css/measurementchart2.jpg" width="250" height="300">
+               <img src="css/measurementchart2.jpg" width="250" height="275">
             <input type="hidden" name="new" value="1" />
 <p>
             <input type="text" name="Burst" placeholder="Enter Burst size " checked />
