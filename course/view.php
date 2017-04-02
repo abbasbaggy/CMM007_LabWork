@@ -42,7 +42,7 @@ include("auth.php");
             <th><strong>Waist to hip</strong></th>
             <th><strong>Front shoulder to waist</strong></th>
             <th><strong>Outside Leg</strong></th>
-            <th><strong>Inside Leg</strong></th>
+            <th><strong>Inside Legs</strong></th>
             <th><strong>Edit</strong></th>
             <th><strong>Delete</strong></th>
         </tr>
