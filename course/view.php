@@ -25,8 +25,24 @@ include("auth.php");
         <thead>
         <tr>
             <th><strong>S.No</strong></th>
-            <th><strong>Name</strong></th>
-            <th><strong>Age</strong></th>
+            <th><strong>Burst</strong></th>
+            <th><strong>Waist</strong></th>
+            <th><strong>Hips</strong></th>
+            <th><strong>Back Width</strong></th>
+            <th><strong>Front chest</strong></th>
+            <th><strong>Shoulder</strong></th>
+            <th><strong>Neck Size</strong></th>
+            <th><strong>Sleeve</strong></th>
+            <th><strong>Under Burst</strong></th>
+            <th><strong>Wrist</strong></th>
+            <th><strong>Upper Arm</strong></th>
+            <th><strong>Calf</strong></th>
+            <th><strong>Ankle</strong></th>
+            <th><strong>Nape to waist</strong></th>
+            <th><strong>Waist to hip</strong></th>
+            <th><strong>Front shoulder to waist</strong></th>
+            <th><strong>Outside Leg</strong></th>
+            <th><strong>Inside Leg</strong></th>
             <th><strong>Edit</strong></th>
             <th><strong>Delete</strong></th>
         </tr>
