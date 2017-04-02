@@ -54,35 +54,35 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
                <img src="css/measurementchart2.jpg" class="img-thumbnail" width="350" height="275">
             <input type="hidden" name="new" value="1" />
 <p>
-            <input type="text" name="Burst" placeholder="Enter Burst size " checked />
-            <input type="text" name="Waist" placeholder="Enter Waist size" required />
-            <input type="text" name="Hips" placeholder="Enter Hips size" required />
-            <input type="text" name="backWidth" placeholder="Enter back width" required />
+            <input type="text" name="Burst" placeholder="Enter Burst size "  />
+            <input type="text" name="Waist" placeholder="Enter Waist size"  />
+            <input type="text" name="Hips" placeholder="Enter Hips size"  />
+            <input type="text" name="backWidth" placeholder="Enter back width" />
 </p>
 
 <p>
-            <input type="text" name="FrontChest" placeholder="Enter Front Chest" required />
+            <input type="text" name="FrontChest" placeholder="Enter Front Chest"  />
             <input type="text" name="Shoulder" placeholder="Enter Shoulder size"  />
-            <input type="text" name="NeckSize" placeholder="Enter Necksize" required />
-            <input type="text" name="Sleeve" placeholder="Enter Sleeve size" required />
+            <input type="text" name="NeckSize" placeholder="Enter Necksize"  />
+            <input type="text" name="Sleeve" placeholder="Enter Sleeve size" />
            </p>
 
                <p>
-               <input type="text" name="UnderBusrt" placeholder="Under bust size" required />
-                <input type="text" name="Wrist" placeholder="Enter Wrist size" required />
-                <input type="text" name="UpperArm" placeholder="Enter Upper Arm size" required />
-                   <input type="text" name="Calf" placeholder="Enter Calf size" required />
+               <input type="text" name="UnderBusrt" placeholder="Under bust size" />
+                <input type="text" name="Wrist" placeholder="Enter Wrist size" />
+                <input type="text" name="UpperArm" placeholder="Enter Upper Arm size" />
+                   <input type="text" name="Calf" placeholder="Enter Calf size"  />
                </p>
 
                <p>
-            <input type="text" name="Ankle" placeholder="Enter Ankle size" required />
-            <input type="text" name="NapeWaist" placeholder="Enter Nape to waist size" required />
-            <input type="text" name="WaistHip" placeholder="Enter Waist to Hip size" required />
-            <input type="text" name="shoulderWaist" placeholder="Enter Front shoulder to waist" required />
+            <input type="text" name="Ankle" placeholder="Enter Ankle size" />
+            <input type="text" name="NapeWaist" placeholder="Enter Nape to waist size" />
+            <input type="text" name="WaistHip" placeholder="Enter Waist to Hip size" />
+            <input type="text" name="shoulderWaist" placeholder="Enter Front shoulder to waist" />
                </p>
             <p>
-                <input type="text" name="outsideLeg" placeholder="Enter outside leg size" required />
-                <input type="text" name="insideLeg" placeholder="Enter inside leg size" required /></p>
+                <input type="text" name="outsideLeg" placeholder="Enter outside leg size" />
+                <input type="text" name="insideLeg" placeholder="Enter inside leg size" /></p>
 
                <p><input name="submit" type="submit" value="Submit" /></p>
            </div>
