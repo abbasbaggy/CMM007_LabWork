@@ -56,6 +56,7 @@ include("auth.php");
             <tr><td align="center"><?php echo $count; ?></td>
                 <td align="center"><?php echo $row["burst"]; ?></td>
                 <td align="center"><?php echo $row["waist"]; ?></td>
+                <td align="center"><?php echo $row["hips"]; ?></td>
                 <td align="center"><?php echo $row["backwidth"]; ?></td>
                 <td align="center"><?php echo $row["frontchest"]; ?></td>
                 <td align="center"><?php echo $row["shoulder"]; ?></td>
