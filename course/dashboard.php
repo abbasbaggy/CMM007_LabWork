@@ -25,7 +25,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <header>
-<div class="container">
+<div class="form">
     <p>Tailoring Design</p>
     <p><a href="index.php">Home</a></p>
     <p><a href="insert.php">Insert New Records</a></p>
