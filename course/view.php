@@ -38,8 +38,23 @@ include("auth.php");
         $result = mysqli_query($con,$sel_query);
         while($row = mysqli_fetch_assoc($result)) { ?>
             <tr><td align="center"><?php echo $count; ?></td>
-                <td align="center"><?php echo $row["name"]; ?></td>
-                <td align="center"><?php echo $row["age"]; ?></td>
+                <td align="center"><?php echo $row["burst"]; ?></td>
+                <td align="center"><?php echo $row["waist"]; ?></td>
+                <td align="center"><?php echo $row["backwidth"]; ?></td>
+                <td align="center"><?php echo $row["frontchest"]; ?></td>
+                <td align="center"><?php echo $row["shoulder"]; ?></td>
+                <td align="center"><?php echo $row["neck"]; ?></td>
+                <td align="center"><?php echo $row["sleeve"]; ?></td>
+                <td align="center"><?php echo $row["underburst"]; ?></td>
+                <td align="center"><?php echo $row["wrist"]; ?></td>
+                <td align="center"><?php echo $row["upperarm"]; ?></td>
+                <td align="center"><?php echo $row["calf"]; ?></td>
+                <td align="center"><?php echo $row["ankle"]; ?></td>
+                <td align="center"><?php echo $row["napewaist"]; ?></td>
+                <td align="center"><?php echo $row["waisthip"]; ?></td>
+                <td align="center"><?php echo $row["shoulderwaist"]; ?></td>
+                <td align="center"><?php echo $row["outsideleg"]; ?></td>
+                <td align="center"><?php echo $row["insideleg"]; ?></td>
                 <td align="center">
                     <a href="edit.php?id=<?php echo $row["id"]; ?>">Edit</a>
                 </td>
