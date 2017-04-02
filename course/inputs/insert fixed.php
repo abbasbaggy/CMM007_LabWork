@@ -30,7 +30,7 @@ $status = "";
 
     <meta charset="utf-8">
     <title>Insert New Measurement</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 <header>
     <h2> Sample for header</h2>
