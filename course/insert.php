@@ -66,17 +66,24 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
             <input type="text" name="Sleeve" placeholder="Enter Sleeve size" required />
            </p>
 
-               <p><input type="text" name="UnderBusrt" placeholder="Under bust size" required /></p>
-            <p><input type="text" name="Wrist" placeholder="Enter Wrist size" required /></p>
-            <p><input type="text" name="UpperArm" placeholder="Enter Upper Arm size" required /></p>
-            <p><input type="text" name="Calf" placeholder="Enter Calf size" required /></p>
-            <p><input type="text" name="Ankle" placeholder="Enter Ankle size" required /></p>
-            <p><input type="text" name="NapeWaist" placeholder="Enter Nape to waist size" required /></p>
-            <p><input type="text" name="WaistHip" placeholder="Enter Waist to Hip size" required /></p>
-            <p><input type="text" name="shoulderWaist" placeholder="Enter Front shoulder to waist" required /></p>
-            <p><input type="text" name="outsideLeg" placeholder="Enter outside leg size" required /></p>
-            <p><input type="text" name="insideLeg" placeholder="Enter inside leg size" required /></p>
-            <p><input name="submit" type="submit" value="Submit" /></p>
+               <p>
+               <input type="text" name="UnderBusrt" placeholder="Under bust size" required />
+                <input type="text" name="Wrist" placeholder="Enter Wrist size" required />
+                <input type="text" name="UpperArm" placeholder="Enter Upper Arm size" required />
+                   <input type="text" name="Calf" placeholder="Enter Calf size" required />
+               </p>
+
+               <p>
+            <input type="text" name="Ankle" placeholder="Enter Ankle size" required />
+            <input type="text" name="NapeWaist" placeholder="Enter Nape to waist size" required />
+            <input type="text" name="WaistHip" placeholder="Enter Waist to Hip size" required />
+            <input type="text" name="shoulderWaist" placeholder="Enter Front shoulder to waist" required />
+               </p>
+            <p>
+                <input type="text" name="outsideLeg" placeholder="Enter outside leg size" required />
+                <input type="text" name="insideLeg" placeholder="Enter inside leg size" required /></p>
+
+               <p><input name="submit" type="submit" value="Submit" /></p>
            </div>
 
         </form>
