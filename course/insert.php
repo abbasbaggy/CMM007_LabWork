@@ -33,7 +33,7 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
 
     $submittedby = $_SESSION["username"];
     $ins_query = "insert into new_record
-    (`trn_date`,`burst`,`waist`,`hips`,`backwidth`,`frontchest`,`shoulder`,`neck`,`sleeve`,`underburst`,`wrist`,`upperarm`,`calf`,ankle,napewaist,waisthip,shoulderwaist,outsideleg,insideleg,`submittedby`)values
+    (`trn_date`,`burst`,`waist`,`hips`,`backwidth`,`frontchest`,`shoulder`,`neck`,`sleeve`,`underburst`,`wrist`,`upperarm`,`calf`,`ankle`,`napewaist`,`waisthip`,`shoulderwaist`,`outsideleg`,`insideleg`,`submittedby`)values
     ('$trn_date','$burst','$waist','$hips','$backWidth','$frontChest','$shoulder','$neck','$sleeve','$underBurst','$wristt','$upperArm','$calf','$ankle','$napeWaist','$waistHip','$shoulderWaist','$outsideLeg','$insideLeg','$submittedby')";
     mysqli_query($con, $ins_query) or die(mysqli_error());
     $status = "New Record Inserted Successfully.
@@ -71,10 +71,10 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
                <img src="css/measurementchart2.jpg" class="img-thumbnail" width="350" height="275">
             <input type="hidden" name="new" value="1" />
 <p>
-            <input type="number" name="Burst" placeholder="Enter Burst size "  />
-            <input type="number" name="Waist" placeholder="Enter Waist size"  />
-            <input type="number" name="Hips" placeholder="Enter Hips size"  />
-            <input type="number" name="backWidth" placeholder="Enter back width" />
+            <input type="text" name="Burst" placeholder="Enter Burst size "  />
+            <input type="text" name="Waist" placeholder="Enter Waist size"  />
+            <input type="text" name="Hips" placeholder="Enter Hips size"  />
+            <input type="text" name="backWidth" placeholder="Enter back width" />
 </p>
 
 <p>
@@ -85,7 +85,7 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
            </p>
 
                <p>
-               <input type="number" name="underBusrt" placeholder="Under bust size" />
+               <input type="text" name="underBusrt" placeholder="Under bust size" />
                 <input type="text" name="Wrist" placeholder="Enter Wrist size" />
                 <input type="text" name="upperArm" placeholder="Enter Upper Arm size" />
                    <input type="text" name="Calf" placeholder="Enter Calf size"  />
