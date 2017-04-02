@@ -57,7 +57,7 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
             <input type="text" name="Waist" placeholder="Enter Waist size" required />
             <input type="text" name="Hips" placeholder="Enter Hips size" required />
             <input type="text" name="backWidth" placeholder="Enter back width" required />
-           </div>
+
             <p><input type="text" name="FrontChest" placeholder="Enter Front Chest" required /></p>
             <p><input type="text" name="Shoulder" placeholder="Enter Shoulder size"  /></p>
             <p><input type="text" name="NeckSize" placeholder="Enter Necksize" required /></p>
@@ -73,6 +73,7 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
             <p><input type="text" name="outsideLeg" placeholder="Enter outside leg size" required /></p>
             <p><input type="text" name="insideLeg" placeholder="Enter inside leg size" required /></p>
             <p><input name="submit" type="submit" value="Submit" /></p>
+           </div>
 
         </form>
         <p style="color:#FF0000;"><?php echo $status; ?></p>
