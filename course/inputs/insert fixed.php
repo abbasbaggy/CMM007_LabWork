@@ -37,9 +37,9 @@ $status = "";
 </header>
 <body>
 <div class="form2">
-    <p><a href="dashboard.php">Dashboard</a>
-        | <a href="view.php">View Records</a>
-        | <a href="logout.php">Logout</a></p>
+    <p><a href="../dashboard.php">Dashboard</a>
+        | <a href="../view.php">View Records</a>
+        | <a href="../logout.php">Logout</a></p>
     <div>
         <h1>Please Insert Your Measurements</h1>
         <form name="form" method="post" action="">
