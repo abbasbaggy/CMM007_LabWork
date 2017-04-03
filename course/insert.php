@@ -9,35 +9,38 @@
 require('db.php');
 include("auth.php");
 $status = "";
+if ($_POST['new']=null){
+    $status = "Empty record can not be stored";
+}elseif ($_POST['new'] =!null) {
+    if (isset($_POST['new']) && $_POST['new'] == 1) {
+        $trn_date = date("Y-m-d H:i:s");
+        $burst = $_REQUEST['Burst'];
+        $waist = $_REQUEST['Waist'];
+        $hips = $_REQUEST['Hips'];
+        $backWidth = $_REQUEST['backWidth'];
+        $frontChest = $_REQUEST['frontChest'];
+        $shoulder = $_REQUEST['Shoulder'];
+        $neck = $_REQUEST['Neck'];
+        $sleeve = $_REQUEST['Sleeve'];
+        $underBurst = $_REQUEST['underBurst'];
+        $wristt = $_REQUEST['Wrist'];
+        $upperArm = $_REQUEST['upperArm'];
+        $calf = $_REQUEST['Calf'];
+        $ankle = $_REQUEST['Ankle'];
+        $napeWaist = $_REQUEST['napeWaist'];
+        $waistHip = $_REQUEST['waistHip'];
+        $shoulderWaist = $_REQUEST['shoulderWaist'];
+        $outsideLeg = $_REQUEST['outsideLeg'];
+        $insideLeg = $_REQUEST['insideLeg'];
 
-if (isset($_POST['new']) && $_POST['new'] == 1) {
-    $trn_date = date("Y-m-d H:i:s");
-    $burst = $_REQUEST['Burst'];
-    $waist = $_REQUEST['Waist'];
-    $hips = $_REQUEST['Hips'];
-    $backWidth = $_REQUEST['backWidth'];
-    $frontChest = $_REQUEST['frontChest'];
-    $shoulder = $_REQUEST['Shoulder'];
-    $neck = $_REQUEST['Neck'];
-    $sleeve = $_REQUEST['Sleeve'];
-    $underBurst= $_REQUEST['underBurst'];
-    $wristt = $_REQUEST['Wrist'];
-    $upperArm = $_REQUEST['upperArm'];
-    $calf = $_REQUEST['Calf'];
-    $ankle = $_REQUEST['Ankle'];
-    $napeWaist = $_REQUEST['napeWaist'];
-    $waistHip = $_REQUEST['waistHip'];
-    $shoulderWaist = $_REQUEST['shoulderWaist'];
-    $outsideLeg = $_REQUEST['outsideLeg'];
-    $insideLeg = $_REQUEST['insideLeg'];
-
-    $submittedby = $_SESSION["username"];
-    $ins_query = "insert into new_record
+        $submittedby = $_SESSION["username"];
+        $ins_query = "insert into new_record
     (`trn_date`,`burst`,`waist`,`hips`,`backwidth`,`frontchest`,`shoulder`,`neck`,`sleeve`,`underburst`,`wrist`,`upperarm`,`calf`,`ankle`,`napewaist`,`waisthip`,`shoulderwaist`,`outsideleg`,`insideleg`,`submittedby`)values
     ('$trn_date','$burst','$waist','$hips','$backWidth','$frontChest','$shoulder','$neck','$sleeve','$underBurst','$wristt','$upperArm','$calf','$ankle','$napeWaist','$waistHip','$shoulderWaist','$outsideLeg','$insideLeg','$submittedby')";
-    mysqli_query($con, $ins_query) or die(mysqli_error());
-    $status = "New Record Inserted Successfully.
+        mysqli_query($con, $ins_query) or die(mysqli_error());
+        $status = "New Record Inserted Successfully.
     </br></br><a href='view.php'>View Inserted Record</a>";
+    }
 }
 
 ?>
@@ -50,7 +53,7 @@ include ('dashboard.php');
 
 
     <div class="container">
-        <h1>Please Insert Your Measurements</h1>
+        <h1>Please Enter Your Measurements</h1>
 
         <form class="form-inline" name="form" method="post" action="">
            <div class="form-group">
