@@ -38,10 +38,14 @@ submittedby='".$submittedby."' where id='".$id."'";
         <form name="form" method="post" action="">
             <input type="hidden" name="new" value="1" />
             <input name="id" type="hidden" value="<?php echo $row['id'];?>" />
-            <p><input type="text" name="name" placeholder="Enter Name"
-                      required value="<?php echo $row['name'];?>" /></p>
-            <p><input type="text" name="age" placeholder="Enter Age"
-                      required value="<?php echo $row['age'];?>" /></p>
+            <p><input type="text" name="burst" placeholder="Enter burst"
+                      required value="<?php echo $row['burst'];?>" /></p>
+            <p><input type="text" name="waist" placeholder="Enter waist"
+                      required value="<?php echo $row['waist'];?>" /></p>
+            <p><input type="text" name="hips" placeholder="Enter hips"
+                      required value="<?php echo $row['hips'];?>" /></p>
+            <p><input type="text" name="backwidth" placeholder="Enter backwidth"
+                      required value="<?php echo $row['backwidth'];?>" /></p>
             <p><input name="submit" type="submit" value="Update" /></p>
         </form>
         <?php } ?>
