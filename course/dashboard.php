@@ -28,7 +28,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
 <header>
     <div class="navbar navbar-default navbar-static-top" role="navigation">
 <div class="container">
-    <p>Tailoring Design</p>
+    <p class="form">Tailoring Design</p>
 <div class="navbar-header">
     <a class="navbar-brand" href="index.php">Home</a>
     <a class="navbar-brand" href="insert.php">Insert New Records</a>
