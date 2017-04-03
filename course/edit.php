@@ -12,18 +12,9 @@ $query = "SELECT * from new_record where id='".$id."'";
 $result = mysqli_query($con, $query) or die ( mysqli_error());
 $row = mysqli_fetch_assoc($result);
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Update Record</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
+<?php include ("dashboard.php"); ?>
 <body>
-<div class="form">
-    <p><a href="dashboard.php">Dashboard</a>
-        | <a href="insert.php">Insert New Record</a>
-        | <a href="logout.php">Logout</a></p>
+
     <h1>Update Record</h1>
     <?php
     $status = "";
