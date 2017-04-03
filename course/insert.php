@@ -9,9 +9,9 @@
 require('db.php');
 include("auth.php");
 $status = "";
-if ($_POST['new']=null){
+if (empty($_POST['new'])){
     $status = "Empty record can not be stored";
-}elseif ($_POST['new'] =!null) {
+}elseif (!empty($_POST['new'])) {
     if (isset($_POST['new']) && $_POST['new'] == 1) {
         $trn_date = date("Y-m-d H:i:s");
         $burst = $_REQUEST['Burst'];
