@@ -47,11 +47,7 @@ include ('dashboard.php');
 ?>
 <body>
 <main>
-<div class="form">
-    <p><a href="dashboard.php">Dashboard</a>
-        | <a href="view.php">View Records</a>
-        | <a href="logout.php">Logout</a></p>
-</div>
+
 
     <div class="container">
         <h1>Please Insert Your Measurements</h1>
