@@ -52,6 +52,7 @@ include ('dashboard.php');
 
     <div class="container">
         <h1>Please Enter Your Measurements</h1>
+        <p style="color:#FF0000;"><?php echo $status; ?></p>
 
         <form class="form-inline" name="form" method="post" action="">
            <div class="form-group">
@@ -92,7 +93,7 @@ include ('dashboard.php');
            </div>
 
         </form>
-        <p style="color:#FF0000;"><?php echo $status; ?></p>
+
     </div>
 </main>
 </body>
