@@ -41,22 +41,12 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
 }
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
+<?php
 
-    <meta charset="utf-8">
-    <title>Insert New Measurement</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<header>
-    <h2> Sample for header</h2>
-</header>
+include ('dashboard.php');
+?>
 <body>
+<main>
 <div class="form">
     <p><a href="dashboard.php">Dashboard</a>
         | <a href="view.php">View Records</a>
@@ -107,6 +97,6 @@ if (isset($_POST['new']) && $_POST['new'] == 1) {
         </form>
         <p style="color:#FF0000;"><?php echo $status; ?></p>
     </div>
-
+</main>
 </body>
 </html>
