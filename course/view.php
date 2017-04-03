@@ -16,6 +16,7 @@ include("auth.php");
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+<main>
 <div class="form">
     <p><a href="index.php">Home</a>
         | <a href="insert.php">Insert New Record</a>
@@ -83,5 +84,6 @@ include("auth.php");
         </tbody>
     </table>
 </div>
+</main>
 </body>
 </html>

@@ -24,6 +24,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<body>
 <header>
 <div class="form">
     <p>Tailoring Design</p>
@@ -36,4 +37,5 @@ include("auth.php"); //include auth.php file on all secure pages ?>
 
 </div>
 </header>
+</body>
 </html>
