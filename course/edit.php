@@ -99,6 +99,5 @@ submittedby='".$submittedby."' where id='".$id."'";
         </form>
         <?php } ?>
     </div>
-</div>
 </body>
 </html>
