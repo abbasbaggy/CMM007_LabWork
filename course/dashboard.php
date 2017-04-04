@@ -26,18 +26,21 @@ include("auth.php"); //include auth.php file on all secure pages ?>
 </head>
 <body>
 <header>
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-<div class="container">
-    <p class="form">Tailoring Design</p>
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
 <div class="navbar-header">
-    <a class="navbar-brand" href="index.php">Home</a>
-    <a class="navbar-brand" href="insert.php">Insert New Records</a>
-    <a class="navbar-brand" href="view.php">View Records</a>
-    <a class="navbar-brand" href="logout.php">Logout</a>
+    <a class="navbar-brand" href="index.php">Tailoring Design</a>
 </div>
+<ul class="nav navbar-nav">
+    <li class="active"><a href="index.php">Home</a></li>
+    <li><a href="insert.php">Insert New Records</a></li>
+    <li><a href="view.php">View Records</a></li>
+    <li><a href="logout.php">Logout</a></li>
+</ul>
 
 </div>
-    </div>
+
+    </nav>
 </header>
 </body>
 </html>
