@@ -17,6 +17,7 @@ $row = mysqli_fetch_assoc($result);
 
     <h1>Update Record</h1>
     <?php
+    require ('db.php');
     $status = "";
     if(isset($_POST['new']) && $_POST['new']==1)
     {
@@ -46,10 +47,10 @@ $row = mysqli_fetch_assoc($result);
 burst='".$burst."', waist='".$waist."',hips='".$hips."',bachwidth='".$backWidth."',frontchest='".$frontChest."',shoulder='".$shoulder."',neck='".$neck."',sleeve='".$sleeve."',underburst='".$underBurst."',wrist='".$wrist."',upperarm='".$upperArm."',calf='".$calf."',ankle='".$ankle."',napewaist='".$napeWaist."',waisthip='".$waistHip."',shoulderwaist='".$shoulderWaist."',outsideleg='".$outsideLeg."',onsideleg='".$outsideLeg."',
 submittedby='".$submittedby."' where id='".$id."'";
         mysqli_query($con, $update) or die(mysqli_error());
-        $status = "Record Updated Successfully.";
-"</br></br><a href='view.php'>View Updated Record</a>";
+        $status = "Record Updated Successfully.;
+</br></br><a href='view.php'>View Updated Record</a>";
         echo '<p style="color:#FF0000;">'.$status.'</p>';
-    }else {
+    }
     ?>
     <div>
         <form name="form" method="post" action="">
@@ -97,7 +98,7 @@ submittedby='".$submittedby."' where id='".$id."'";
                       required value="<?php echo $row['insideleg'];?>" /></p>
             <p><input name="submit" type="submit" value="Update" /></p>
         </form>
-        <?php } ?>
+        <?php  ?>
     </div>
 </body>
 </html>
