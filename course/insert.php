@@ -69,14 +69,14 @@ include ('dashboard.php');
 </p>
 
 <p>
-            <input type="text" name="FrontChest" placeholder="Enter Front Chest"  />
+            <input type="text" name="frontChest" placeholder="Enter Front Chest"  />
             <input type="text" name="Shoulder" placeholder="Enter Shoulder size"  />
-            <input type="text" name="NeckSize" placeholder="Enter Necksize"  />
+            <input type="text" name="Neck" placeholder="Enter Necksize"  />
             <input type="text" name="Sleeve" placeholder="Enter Sleeve size" />
            </p>
 
                <p>
-               <input type="text" name="underBusrt" placeholder="Under bust size" />
+               <input type="text" name="underBurst" placeholder="Under bust size" />
                 <input type="text" name="Wrist" placeholder="Enter Wrist size" />
                 <input type="text" name="upperArm" placeholder="Enter Upper Arm size" />
                    <input type="text" name="Calf" placeholder="Enter Calf size"  />

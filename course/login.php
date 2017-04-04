@@ -19,6 +19,7 @@ Website: http://www.allphptricks.com/
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+<main>
 <?php
 require('db.php');
 session_start();
@@ -54,6 +55,6 @@ if (isset($_POST['username'])){
     </div>
 <?php } ?>
 
-
+</main>
 </body>
 </html>
