@@ -5,6 +5,7 @@
  * Date: 3/31/2017
  * Time: 6:23 PM
  */
+ include ("dashboard.php");
 require('db.php');
 include("auth.php");
 $id=$_REQUEST['id'];
@@ -12,7 +13,7 @@ $query = "SELECT * from new_record where id='".$id."'";
 $result = mysqli_query($con, $query) or die ( mysqli_error());
 $row = mysqli_fetch_assoc($result);
 ?>
-<?php include ("dashboard.php"); ?>
+
 <body>
 
     <h1>Update Record</h1>
@@ -50,7 +51,7 @@ submittedby='".$submittedby."' where id='".$id."'";
         $status = "Record Updated Successfully.;
 </br></br><a href='view.php'>View Updated Record</a>";
         echo '<p style="color:#FF0000;">'.$status.'</p>';
-    }
+    }else {
     ?>
     <div>
         <form name="form" method="post" action="">
@@ -98,7 +99,7 @@ submittedby='".$submittedby."' where id='".$id."'";
                       required value="<?php echo $row['insideleg'];?>" /></p>
             <p><input name="submit" type="submit" value="Update" /></p>
         </form>
-        <?php  ?>
+        <?php } ?>
     </div>
 </body>
 </html>
