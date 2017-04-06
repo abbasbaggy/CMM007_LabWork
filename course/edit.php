@@ -1,4 +1,4 @@
-<?php  ini_set('display_errors', 1);
+<?php   ini_set('display_errors', 1);
 /**
  * Created by PhpStorm.
  * User: Abbas
@@ -33,7 +33,7 @@ $row = mysqli_fetch_assoc($result);
         $neck = $_REQUEST['neck'];
         $sleeve = $_REQUEST['sleeve'];
         $underBurst = $_REQUEST['underburst'];
-        $wrist = $_REQUEST['wrist'];
+        $wristt = $_REQUEST['wrist'];
         $upperArm = $_REQUEST['upperarm'];
         $calf = $_REQUEST['calf'];
         $ankle = $_REQUEST['ankle'];
@@ -44,9 +44,9 @@ $row = mysqli_fetch_assoc($result);
         $insideLeg = $_REQUEST['insideleg'];
 
         $submittedby = $_SESSION["username"];
-        $update="update new_record set trn_date=".$trn_date.",
-burst=".$burst.", waist=".$waist.",hips=".$hips.",bachwidth=".$backWidth.",frontchest=".$frontChest.",shoulder=".$shoulder.",neck=".$neck.",sleeve=".$sleeve.",underburst=".$underBurst.",wrist=".$wrist.",upperarm=".$upperArm.",calf=".$calf.",ankle=".$ankle.",napewaist=".$napeWaist.",waisthip=".$waistHip.",shoulderwaist=".$shoulderWaist.",outsideleg=".$outsideLeg.",onsideleg=".$outsideLeg.",
-submittedby=".$submittedby." where id=".$id."";
+        $update="update new_record set trn_date=`".$trn_date."`,
+burst=`".$burst."`, waist=`".$waist."`,hips=`".$hips."`,bachwidth=`".$backWidth."`,frontchest=`".$frontChest."`,shoulder=`".$shoulder."`,neck=`".$neck."`,sleeve=`".$sleeve."`,underburst=`".$underBurst."`,wrist=`".$wrist."`,upperarm=`".$upperArm."`,calf=`".$calf."`,ankle=`".$ankle."`,napewaist=`".$napeWaist."`,waisthip=`".$waistHip."`,shoulderwaist=`".$shoulderWaist."`,outsideleg=`".$outsideLeg."`,onsideleg=`".$outsideLeg."`,
+submittedby=`".$submittedby."` where id=`".$id."`";
         mysqli_query($con, $update) or die(mysqli_error());
         $status = "Record Updated Successfully.;
 </br></br><a href='view.php'>View Updated Record</a>";
@@ -86,7 +86,7 @@ submittedby=".$submittedby." where id=".$id."";
 
             <p><input type="text" name="ankle" placeholder="Enter ankle"
                       required value="<?php echo $row['ankle'];?>" /></p>
-            <p><input type="text" name="napewaist" placeholder="Enter Nape to waist"
+            <p><input type="text" name="napwaist" placeholder="Enter Nape to waist"
                       required value="<?php echo $row['napewaist'];?>" /></p>
             <p><input type="text" name="waisthip" placeholder="Enter waist to hip"
                       required value="<?php echo $row['waisthip'];?>" /></p>
