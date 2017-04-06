@@ -35,6 +35,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
     <li class="active"><a href="index.php">Home</a></li>
     <li><a href="insert.php">Insert New Records</a></li>
     <li><a href="view.php">View Records</a></li>
+    <li><a href="uploadcheck.php">uploadcheck</a></li>
     <li><a href="logout.php">Logout</a></li>
 </ul>
 

@@ -17,4 +17,4 @@ if (mysqli_query($link, $sql_query)) {
 } else{
     echo "Error: ". $sql_query . "<br>" . mysqli_error($link);
 }
-header("loaction:index.php");
+header("location:index.php");
