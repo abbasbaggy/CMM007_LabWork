@@ -1,10 +1,13 @@
 <?php
+include ('auth.php');
 /**
  * Created by PhpStorm.
  * User: Abbas
  * Date: 4/6/2017
  * Time: 2:37 PM
  */
+$username = $_SESSION["username"];
+
 if (($_FILES['file']['name']!="")){
 // Where the file is going to be stored
     $upload_dir = "upload/";
