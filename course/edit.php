@@ -86,7 +86,7 @@ submittedby=".$submittedby." where id=".$id."";
 
             <p><input type="text" name="ankle" placeholder="Enter ankle"
                       required value="<?php echo $row['ankle'];?>" /></p>
-            <p><input type="text" name="napwaist" placeholder="Enter Nape to waist"
+            <p><input type="text" name="napewaist" placeholder="Enter Nape to waist"
                       required value="<?php echo $row['napewaist'];?>" /></p>
             <p><input type="text" name="waisthip" placeholder="Enter waist to hip"
                       required value="<?php echo $row['waisthip'];?>" /></p>
