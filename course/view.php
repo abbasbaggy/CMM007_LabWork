@@ -17,7 +17,7 @@ include ('dashboard.php')
     <table width="100%" border="1" style="border-collapse:collapse;">
         <thead>
         <tr>
-            <th><strong>S.No</strong></th>
+            <th><strong>Order.No</strong></th>
             <th><strong>Burst</strong></th>
             <th><strong>Waist</strong></th>
             <th><strong>Hips</strong></th>
