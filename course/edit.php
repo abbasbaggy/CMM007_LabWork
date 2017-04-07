@@ -20,7 +20,7 @@ $row = mysqli_fetch_assoc($result);
     <?php
     require ('db.php');
     $status = "";
-    if(isset($_POST['new']) && $_POST['new']==1)
+    if(isset($_POST['new']) && $_POST['new'] == 1)
     {
         $id=$_REQUEST['id'];
         $trn_date = date("Y-m-d H:i:s");
@@ -44,9 +44,9 @@ $row = mysqli_fetch_assoc($result);
         $insideLeg = $_REQUEST['insideleg'];
 
         $submittedby = $_SESSION["username"];
-        $update="update new_record set `trn_date=`.$trn_date.`,
-burst=`.$burst., waist=`.$waist.`,hips=`.$hips.`,bachwidth=`.$backWidth.`,frontchest=`.$frontChest.`,shoulder=`.$shoulder.`,neck=`.$neck.`,sleeve=`.$sleeve.`,underburst=`.$underBurst.`,wrist=`.$wrist.`,upperarm=`.$upperArm.`,calf=`.$calf.`,ankle=`.$ankle.`,napewaist=`.$napeWaist.`,waisthip=`.$waistHip.`,shoulderwaist=`.$shoulderWaist.`,outsideleg=`.$outsideLeg.`,onsideleg=`.$outsideLeg.`,
-submittedby=`.$submittedby.` where id=`.$id.`";
+        $update="update new_record set `trn_date`=$trn_date,`
+burst`= $burst, `waist`=$waist,`hips`=$hips,`bachwidth`=$backWidth,`frontchest``=$frontChest,`shoulder`=$shoulder,`neck`=$neck,`sleeve`=$sleeve,`underburst`=$underBurst,`wrist`=$wrist,`upperarm`=$upperArm,`calf`=$calf,`ankle`=$ankle,`napewaist`=$napeWaist,`waisthip`=$waistHip,`shoulderwaist`=$shoulderWaist,`outsideleg`=$outsideLeg,`onsideleg`=$outsideLeg,
+submittedby`=$submittedby where `id`=$id ";
         mysqli_query($con, $update) or die(mysqli_error());
         $status = "Record Updated Successfully.;
 </br></br><a href='view.php'>View Updated Record</a>";
