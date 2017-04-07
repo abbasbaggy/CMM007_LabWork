@@ -56,7 +56,7 @@ include ('dashboard.php');
 
         <form class="form-inline" name="form" method="post" action="">
            <div class="form-group">
-               <img src="upload/measurementchart2.jpg" class="img-thumbnail" width="350" height="275">
+               <img src="css/measurementchart2.jpg" class="img-thumbnail" width="350" height="275">
             <input type="hidden" name="new" value="1" />
 <p>
             <input type="text" name="Burst" placeholder="Enter Burst size "  />

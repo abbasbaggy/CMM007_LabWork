@@ -33,7 +33,7 @@ if (isset($_POST['submit']))
                 $filename = '1' . '-' . $filename;
 
             //set target directory
-            $path = 'css/';
+            $path = 'upload/';
 
             $created = @date('Y-m-d H:i:s');
             move_uploaded_file($_FILES['file1']['tmp_name'],($path . $filename));
