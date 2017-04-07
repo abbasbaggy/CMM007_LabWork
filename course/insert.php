@@ -9,10 +9,7 @@
 require('db.php');
 include("auth.php");
 $status = "";
-if (empty($_POST['new'])){
-    $php_errormsg= true;
-  return $status = "Empty record can not be stored";
-}elseif (!empty($_POST['new'])) {
+
     if (isset($_POST['new']) && $_POST['new'] == 1) {
         $trn_date = date("Y-m-d H:i:s");
         $burst = $_REQUEST['Burst'];
@@ -42,7 +39,7 @@ if (empty($_POST['new'])){
         $status = "New Record Inserted Successfully.
     </br></br><a href='view.php'>View Inserted Record</a>";
     }
-}
+
 
 ?>
 <?php
