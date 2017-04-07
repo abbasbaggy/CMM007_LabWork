@@ -59,8 +59,8 @@ $result = mysqli_query($con, $sql);
                     <tr>
                         <td><?php echo $i++; ?></td>
                         <td><?php echo $row['filename']; ?></td>
-                        <td><a href="uploads/<?php echo $row['filename']; ?>" target="_blank">View</a></td>
-                        <td><a href="uploads/<?php echo $row['filename']; ?>" download>Download</td>
+                        <td><a href="upload/<?php echo $row['filename']; ?>" target="_blank">View</a></td>
+                        <td><a href="upload/<?php echo $row['filename']; ?>" download>Download</td>
                     </tr>
                 <?php } ?>
                 </tbody>
