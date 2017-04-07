@@ -16,6 +16,7 @@ $result = mysqli_query($con, $sql);
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<main>
 <br/>
 <div class="container">
     <div class="row">
@@ -70,5 +71,6 @@ $result = mysqli_query($con, $sql);
         </div>
     </div>
 </div>
+</main>
 </body>
 </html>

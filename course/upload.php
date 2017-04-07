@@ -5,6 +5,7 @@
  * Date: 4/7/2017
  * Time: 10:44 PM
  */
+include "db.php";
 
 //check if form is submitted
 if (isset($_POST['submit']))
