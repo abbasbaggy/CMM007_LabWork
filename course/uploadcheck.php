@@ -17,7 +17,7 @@ $result = mysqli_query($con, $sql);
 </head>
 <body>
 <header>
-    <?php include ("dashboard.php"); ?>
+    <?php include ("dahboard.php"); ?>
 </header>
 <main>
 <br/>
