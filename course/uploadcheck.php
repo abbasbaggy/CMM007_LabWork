@@ -16,6 +16,9 @@ $result = mysqli_query($con, $sql);
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<header>
+    <?php include ("dashboard.php"); ?>
+</header>
 <main>
 <br/>
 <div class="container">
