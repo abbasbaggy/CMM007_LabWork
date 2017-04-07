@@ -11,7 +11,7 @@ include("auth.php");
 $status = "";
 if (empty($_POST['new'])){
     $php_errormsg= true;
-    $status = "Empty record can not be stored";
+  return $status = "Empty record can not be stored";
 }elseif (!empty($_POST['new'])) {
     if (isset($_POST['new']) && $_POST['new'] == 1) {
         $trn_date = date("Y-m-d H:i:s");
