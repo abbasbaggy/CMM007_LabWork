@@ -56,6 +56,7 @@ $result = mysqli_query($con, $sql);
                     <th>File Name</th>
                     <th>View</th>
                     <th>Download</th>
+                    <th>delete</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -67,6 +68,7 @@ $result = mysqli_query($con, $sql);
                         <td><?php echo $row['filename']; ?></td>
                         <td><a href="upload/<?php echo $row['filename']; ?>" target="_blank">View</a></td>
                         <td><a href="upload/<?php echo $row['filename']; ?>" download>Download</td>
+                        <td><a class="btn btn-danger" href="?delete_id=<?php echo $row['id']; ?>" title="click for delete" onclick="return confirm('sure to delete ?')"</td>
                     </tr>
                 <?php } ?>
                 </tbody>
