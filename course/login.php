@@ -38,7 +38,10 @@ if (isset($_POST['username'])){
     if($rows==1){
         $_SESSION['username'] = $username;
         header("Location: index.php"); // Redirect user to index.php
-    }else{
+    }elseif ($_SESSION['username'] == "Abbas"){
+        header("location: adminveiw.php");
+    }
+    else{
         echo "<div class='form'><h3>Username/password is incorrect.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
     }
 }else{
