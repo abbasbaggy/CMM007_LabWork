@@ -17,7 +17,7 @@ $row = mysqli_fetch_assoc($result);
 
     <h1>Update Record</h1>
     <?php
-    require ('db.php');
+    include ("db.php");
     $status = "";
     if(isset($_POST['new']) && $_POST['new'] == 1)
     {
