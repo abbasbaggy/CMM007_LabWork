@@ -64,7 +64,7 @@ include ('dashboard.php');
                    <input type="text" name="request name" placeholder="order label" required id="rqst">
                </div>
 
-               <input type="hidden" name="new" value="1" />
+               <input type="hidden" name="new" value="1" required/>
 <p>
             <input type="text" name="Burst" placeholder="Enter Burst size "  />
             <input type="text" name="Waist" placeholder="Enter Waist size"  />
