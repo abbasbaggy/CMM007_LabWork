@@ -6,8 +6,7 @@
  * Time: 6:23 PM
  */
  include ("dashboard.php");
-require('db.php');
-include("auth.php");
+
 $id=$_REQUEST['id'];
 $query = "SELECT * from new_record where id='".$id."'";
 $result = mysqli_query($con, $query) or die ( mysqli_error());
