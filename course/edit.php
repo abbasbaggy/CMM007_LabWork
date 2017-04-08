@@ -43,8 +43,8 @@ $row = mysqli_fetch_assoc($result);
         $insideLeg = $_REQUEST['insideleg'];
 
         $submittedby = $_SESSION["username"];
-        $update="UPDATE new_record set trn_date=".$trn_date." ,
-burst=".$burst.", waist=".$waist.", hips='".$hips."', bachwidth='".$backWidth."', frontchest='".$frontChest."',
+        $update="UPDATE new_record set trn_date="$trn_date",
+burst="$burst", waist='".$waist."', hips='".$hips."', bachwidth='".$backWidth."', frontchest='".$frontChest."',
 shoulder='".$shoulder."', neck='".$neck."', sleeve='".$sleeve."', underburst='".$underBurst."', wrist='".$wrist."',
 upperarm='".$upperArm."', calf='".$calf."', ankle='".$ankle."', napewaist='".$napeWaist."', waisthip='".$waistHip."',
 shoulderwaist='".$shoulderWaist."', outsideleg='".$outsideLeg."', onsideleg='".$outsideLeg."', 
