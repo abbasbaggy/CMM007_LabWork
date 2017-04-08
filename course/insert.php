@@ -52,16 +52,19 @@ include ('dashboard.php');
 
     <div class="container">
         <h1>Please Enter Your Measurements</h1>
-        <div class="form-group" name="form2" method="" action="">
-            <label for="rqst">Order name</label>
-            <input type="text" name="request name" placeholder="order label" required id="rqst">
-        </div>
+
         <p style="color:#FF0000;"><?php echo $status; ?></p>
 
         <form class="form-inline" name="form" method="post" action="">
            <div class="form-group">
                <img src="css/measurementchart2.jpg" class="img-thumbnail" width="350" height="275">
-            <input type="hidden" name="new" value="1" />
+
+               <div class="form-group" name="form2" method="" action="">
+                   <label for="rqst">Order name</label>
+                   <input type="text" name="request name" placeholder="order label" required id="rqst">
+               </div>
+
+               <input type="hidden" name="new" value="1" />
 <p>
             <input type="text" name="Burst" placeholder="Enter Burst size "  />
             <input type="text" name="Waist" placeholder="Enter Waist size"  />
