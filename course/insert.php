@@ -54,7 +54,7 @@ include ('dashboard.php');
         <h1>Please Enter Your Measurements</h1>
         <div class="form-group" name="form2" method="" action="">
             <label for="rqst">Order name</label>
-            <input type="text" name="request name" placeholder="order label" id="rqst">
+            <input type="text" name="request name" placeholder="order label" required id="rqst">
         </div>
         <p style="color:#FF0000;"><?php echo $status; ?></p>
 
