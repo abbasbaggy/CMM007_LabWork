@@ -52,6 +52,10 @@ include ('dashboard.php');
 
     <div class="container">
         <h1>Please Enter Your Measurements</h1>
+        <div class="form-group" name="form2" method="" action="">
+            <label for="rqst">Order name</label>
+            <input type="text" name="request name" placeholder="order label" id="rqst">
+        </div>
         <p style="color:#FF0000;"><?php echo $status; ?></p>
 
         <form class="form-inline" name="form" method="post" action="">
