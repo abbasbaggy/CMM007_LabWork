@@ -38,6 +38,10 @@ include("auth.php"); //include auth.php file on all secure pages ?>
     <li><a href="uploadcheck.php">uploadcheck</a></li>
     <li><a href="logout.php">Logout</a></li>
 </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a><span class="glyphicon glyphicon-user"></span><?php echo $_SESSION['username']; ?></a></li>
+            <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
 
 </div>
 
