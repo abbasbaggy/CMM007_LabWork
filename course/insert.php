@@ -64,7 +64,7 @@ include ('dashboard.php');
                    <input type="text" name="request name" placeholder="order label" required id="rqst">
                </div>
 
-               <input type="radio" name="new" value="1" />
+               <input type="hidden" name="new" value="1" />
 <p>
             <input type="text" name="Burst" placeholder="Enter Burst size "  />
             <input type="text" name="Waist" placeholder="Enter Waist size"  />
@@ -100,6 +100,10 @@ include ('dashboard.php');
            </div>
 
         </form>
+        <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="3" id="comment"></textarea>
+        </div>
 
     </div>
 </main>
