@@ -7,7 +7,7 @@
  */
 require('db.php');
 include("auth.php");
-include ('dashboard.php')
+include('dashboard.php')
 ?>
 
 <body>
@@ -67,10 +67,10 @@ include ('dashboard.php')
                 <td align="center"><?php echo $row["outsideleg"]; ?></td>
                 <td align="center"><?php echo $row["insideleg"]; ?></td>
                 <td align="center">
-                    <a href="edit.php?id=<?php echo $row["id"]; ?>">Edit</a>
+                    <a href="../edit.php?id=<?php echo $row[">Edit</a>
                 </td>
                 <td align="center">
-                    <a href="delete.php?id=<?php echo $row["id"]; ?>">Delete</a>
+                    <a href="../delete.php?id=<?php echo $row[">Delete</a>
                 </td>
             </tr>
             <?php $count++; } ?>

@@ -6,9 +6,7 @@
  * Time: 10:44 PM
  */
 include "db.php";
-include "auth.php";
 
-$username = $_SESSION["username"];
 //check if form is submitted
 if (isset($_POST['submit']))
 {
@@ -18,7 +16,7 @@ if (isset($_POST['submit']))
     if($filename != '')
     {
         $ext = pathinfo($filename, PATHINFO_EXTENSION);
-        $allowed = ['png', 'jpg', 'jpeg',  'gif'];
+        $allowed = ['pdf', 'txt', 'doc', 'docx', 'png', 'jpg', 'jpeg',  'gif'];
 
         //check if file type is valid
         if (in_array($ext, $allowed))

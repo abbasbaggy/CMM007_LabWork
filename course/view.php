@@ -13,31 +13,32 @@ include ('dashboard.php')
 <body>
 <main>
 
+    <div class="container">
     <h2>View Records</h2>
-    <table width="100%" border="1" style="border-collapse:collapse;">
+    <table class="table table-hover">
         <thead>
         <tr>
-            <th><strong>Order.No</strong></th>
-            <th><strong>Burst</strong></th>
-            <th><strong>Waist</strong></th>
-            <th><strong>Hips</strong></th>
-            <th><strong>Back Width</strong></th>
-            <th><strong>Front chest</strong></th>
-            <th><strong>Shoulder</strong></th>
-            <th><strong>Neck Size</strong></th>
-            <th><strong>Sleeve</strong></th>
-            <th><strong>Under Burst</strong></th>
-            <th><strong>Wrist</strong></th>
-            <th><strong>Upper Arm</strong></th>
-            <th><strong>Calf</strong></th>
-            <th><strong>Ankle</strong></th>
-            <th><strong>Nape to waist</strong></th>
-            <th><strong>Waist to hip</strong></th>
-            <th><strong>Front shoulder to waist</strong></th>
-            <th><strong>Outside Leg</strong></th>
-            <th><strong>Inside Legs</strong></th>
-            <th><strong>Edit</strong></th>
-            <th><strong>Delete</strong></th>
+            <th>Order.No</th>
+            <th>Burst</th>
+            <th>Waist</th>
+            <th>Hips</th>
+            <th>Back Width</th>
+            <th>Front chest</th>
+            <th>Shoulder</th>
+            <th>Neck Size</th>
+            <th>Sleeve</th>
+            <th>Under Burst</th>
+            <th>Wrist</th>
+            <th>Upper Arm</th>
+            <th>Calf</th>
+            <th>Ankle</th>
+            <th>Nape to waist</th>
+            <th>Waist to hip</th>
+            <th>Front shoulder to waist</th>
+            <th>Outside Leg</th>
+            <th>Inside Legs</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
         </thead>
         <tbody>
