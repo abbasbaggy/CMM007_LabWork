@@ -48,7 +48,7 @@ include ('dashboard.php')
         $sel_query="Select * from new_record WHERE submittedby = '$veiwby' ORDER BY id desc;";
         $result = mysqli_query($con,$sel_query);
         while($row = mysqli_fetch_assoc($result)) { ?>
-            <tr><td ><?php echo $count; ?></td>
+            <tr><td align="center"><?php echo $count; ?></td>
                 <td ><?php echo $row["burst"]; ?></td>
                 <td ><?php echo $row["waist"]; ?></td>
                 <td ><?php echo $row["hips"]; ?></td>
@@ -70,7 +70,7 @@ include ('dashboard.php')
                 <td >
                     <a href="edit.php?id=<?php echo $row["id"]; ?>">Edit</a>
                 </td>
-                <td >
+                <td align="center">
                     <a href="delete.php?id=<?php echo $row["id"]; ?>">Delete</a>
                 </td>
             </tr>
