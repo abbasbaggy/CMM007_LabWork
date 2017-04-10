@@ -9,7 +9,7 @@ require('db.php');
 include("auth.php");
 include ('dashboard.php')
 ?>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
 <main>
 
