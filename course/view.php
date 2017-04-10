@@ -48,29 +48,29 @@ include ('dashboard.php')
         $sel_query="Select * from new_record WHERE submittedby = '$veiwby' ORDER BY id desc;";
         $result = mysqli_query($con,$sel_query);
         while($row = mysqli_fetch_assoc($result)) { ?>
-            <tr><td align="center"><?php echo $count; ?></td>
-                <td align="center"><?php echo $row["burst"]; ?></td>
-                <td align="center"><?php echo $row["waist"]; ?></td>
-                <td align="center"><?php echo $row["hips"]; ?></td>
-                <td align="center"><?php echo $row["backwidth"]; ?></td>
-                <td align="center"><?php echo $row["frontchest"]; ?></td>
-                <td align="center"><?php echo $row["shoulder"]; ?></td>
-                <td align="center"><?php echo $row["neck"]; ?></td>
-                <td align="center"><?php echo $row["sleeve"]; ?></td>
-                <td align="center"><?php echo $row["underburst"]; ?></td>
-                <td align="center"><?php echo $row["wrist"]; ?></td>
-                <td align="center"><?php echo $row["upperarm"]; ?></td>
-                <td align="center"><?php echo $row["calf"]; ?></td>
-                <td align="center"><?php echo $row["ankle"]; ?></td>
-                <td align="center"><?php echo $row["napewaist"]; ?></td>
-                <td align="center"><?php echo $row["waisthip"]; ?></td>
-                <td align="center"><?php echo $row["shoulderwaist"]; ?></td>
-                <td align="center"><?php echo $row["outsideleg"]; ?></td>
-                <td align="center"><?php echo $row["insideleg"]; ?></td>
-                <td align="center">
+            <tr><td ><?php echo $count; ?></td>
+                <td ><?php echo $row["burst"]; ?></td>
+                <td ><?php echo $row["waist"]; ?></td>
+                <td ><?php echo $row["hips"]; ?></td>
+                <td ><?php echo $row["backwidth"]; ?></td>
+                <td ><?php echo $row["frontchest"]; ?></td>
+                <td ><?php echo $row["shoulder"]; ?></td>
+                <td ><?php echo $row["neck"]; ?></td>
+                <td ><?php echo $row["sleeve"]; ?></td>
+                <td ><?php echo $row["underburst"]; ?></td>
+                <td ><?php echo $row["wrist"]; ?></td>
+                <td ><?php echo $row["upperarm"]; ?></td>
+                <td ><?php echo $row["calf"]; ?></td>
+                <td ><?php echo $row["ankle"]; ?></td>
+                <td ><?php echo $row["napewaist"]; ?></td>
+                <td ><?php echo $row["waisthip"]; ?></td>
+                <td ><?php echo $row["shoulderwaist"]; ?></td>
+                <td ><?php echo $row["outsideleg"]; ?></td>
+                <td ><?php echo $row["insideleg"]; ?></td>
+                <td >
                     <a href="edit.php?id=<?php echo $row["id"]; ?>">Edit</a>
                 </td>
-                <td align="center">
+                <td >
                     <a href="delete.php?id=<?php echo $row["id"]; ?>">Delete</a>
                 </td>
             </tr>
