@@ -15,7 +15,7 @@ include ('dashboard.php')
 
     <div class="container">
     <h2>View Records</h2>
-    <table class="table table-hover">
+    <table class="table table-bordered">
         <thead>
         <tr>
             <th>Order.No</th>
