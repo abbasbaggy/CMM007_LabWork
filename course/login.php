@@ -32,7 +32,7 @@ if (isset($_POST['username'])){
     $password = mysqli_real_escape_string($con,$password);
 
 if ($username="Abbas" & $password="admin") {
-    $_SESSION['username']=$username;
+
     header ("location: index.php");
 }
     //Checking is user existing in the database or not
