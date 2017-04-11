@@ -101,9 +101,9 @@ submittedby='".$submittedby."'
                       required value="<?php echo $row['outsideleg'];?>" /></p>
             <p><input type="text" name="insideleg" placeholder="Enter inside leg"
                       required value="<?php echo $row['insideleg'];?>" /></p>
+
             <p><input name="submit" type="submit" value="Update" /></p>
         </form>
         <?php } ?>
     </div>
 </body>
-</html>
