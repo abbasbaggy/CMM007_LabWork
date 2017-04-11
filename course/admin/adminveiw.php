@@ -70,7 +70,7 @@ include('dashboard.php')
                     <a href="../edit.php?id=<?php echo $row[">Edit</a>
                 </td>
                 <td align="center">
-                    <a href="../delete.php?id=<?php echo $row[">Delete</a>
+                    <a href="../delete.php?id=<?php echo $row["id"]; ?>">Delete</a>
                 </td>
             </tr>
             <?php $count++; } ?>
