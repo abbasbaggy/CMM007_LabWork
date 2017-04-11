@@ -24,12 +24,7 @@ Website: http://www.allphptricks.com/
 require('db.php');
 session_start();
 // If form submitted, insert values into the database.
-if($username="Abbas" & $password="admin") {
-    $_SESSION['username'] = $username;
-    header("location: index.php");
-}
-
-elseif (isset($_POST['username'])){
+if (isset($_POST['username'])){
 
     $username = stripslashes($_REQUEST['username']); // removes backslashes
     $username = mysqli_real_escape_string($con,$username); //escapes special characters in a string
