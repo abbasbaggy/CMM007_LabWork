@@ -31,6 +31,7 @@ if (isset($_POST['username'])){
     $password = stripslashes($_REQUEST['password']);
     $password = mysqli_real_escape_string($con,$password);
 
+
     //Checking is user existing in the database or not
     $query = "SELECT * FROM `users2` WHERE username='$username' and password='".md5($password)."'";
     $result = mysqli_query($con,$query) or die(mysqli_error());
@@ -38,10 +39,7 @@ if (isset($_POST['username'])){
     if($rows==1){
         $_SESSION['username'] = $username;
         header("Location: index.php"); // Redirect user to index.php
-    }elseif ($_SESSION['username'] == "Abbas" && $password== "abbas" ){
-        header("location: adminveiw.php");
-    }
-    else{
+    } else{
         echo "<div class='form'><h3>Username/password is incorrect.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
     }
 }else{
