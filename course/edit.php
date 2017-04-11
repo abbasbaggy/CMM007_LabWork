@@ -43,14 +43,14 @@ $row = mysqli_fetch_assoc($result);
         $insideLeg = $_REQUEST['insideleg'];
 
         $submittedby = $_SESSION["username"];
-        $update="UPDATE new_record 
+        $update="UPDATE new_record
+ WHERE id='$id'
 SET trn_date='".$trn_date."',
 burst='".$burst."', waist='".$waist."', hips='".$hips."', bachwidth='".$backWidth."', frontchest='".$frontChest."',
 shoulder='".$shoulder."', neck='".$neck."', sleeve='".$sleeve."', underburst='".$underBurst."', wrist='".$wrist."',
 upperarm='".$upperArm."', calf='".$calf."', ankle='".$ankle."', napewaist='".$napeWaist."', waisthip='".$waistHip."',
 shoulderwaist='".$shoulderWaist."', outsideleg='".$outsideLeg."', onsideleg='".$outsideLeg."', 
-submittedby='".$submittedby."'
- WHERE id='".$id."'";
+submittedby='".$submittedby."'";
         mysqli_query($con, $update) ;//or die(mysqli_error($con));
         $status = "Record Updated Successfully.;
 </br></br><a href='view.php'>View Updated Record</a>";
