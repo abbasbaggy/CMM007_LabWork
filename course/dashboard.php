@@ -34,7 +34,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
 <ul class="nav navbar-nav">
     <li class="active"><a href="index.php">Home</a></li>
     <li><a href="insert.php">Insert New Records</a></li>
-    <li><a href="view.php">View Your Order</a></li>
+    <li><a href="admin/view.php">View Your Order</a></li>
     <li><a href="uploadcheck.php">uploadcheck</a></li>
 
 </ul>
