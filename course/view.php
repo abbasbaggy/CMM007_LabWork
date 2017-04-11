@@ -39,6 +39,7 @@ include('dashboard.php')
             <th>Inside Legs</th>
             <th>Edit</th>
             <th>Delete</th>
+            <th>veiw pictures</th>
         </tr>
         </thead>
         <tbody>
@@ -72,6 +73,9 @@ include('dashboard.php')
                 </td>
                 <td align="center">
                     <a href="delete.php?id=<?php echo $row["id"]; ?>">Delete</a>
+                </td>
+                <td>
+                    <a href="upload/<?php echo $row['filename']; ?>" target="_blank">design veiw</a>
                 </td>
             </tr>
             <?php $count++; } ?>
