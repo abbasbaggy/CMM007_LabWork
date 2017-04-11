@@ -24,7 +24,7 @@ Website: http://www.allphptricks.com/
 require('db.php');
 session_start();
 // If form submitted, insert values into the database.
-if($username="Abaas" & $password="admin") {
+if($username="Abbas" & $password="admin") {
     $_SESSION['username'] = $username;
     header("location: index.php");
 }
