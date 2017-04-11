@@ -53,7 +53,7 @@ submittedby='".$submittedby."'
  WHERE id='".$id."'";
         mysqli_query($con, $update) ;//or die(mysqli_error($con));
         $status = "Record Updated Successfully.;
-</br></br><a href='admin/view.php'>View Updated Record</a>";
+</br></br><a href='view.php'>View Updated Record</a>";
         echo '<p style="color:#FF0000;">'.$status.'</p>';
     }else {
     ?>
