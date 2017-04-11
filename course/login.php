@@ -24,7 +24,12 @@ Website: http://www.allphptricks.com/
 require('db.php');
 session_start();
 // If form submitted, insert values into the database.
-if (isset($_POST['username'])){
+if($username="Abaas" & $password="admin") {
+    $_SESSION['username'] = $username;
+    header("location: index.php");
+}
+
+elseif (isset($_POST['username'])){
 
     $username = stripslashes($_REQUEST['username']); // removes backslashes
     $username = mysqli_real_escape_string($con,$username); //escapes special characters in a string
@@ -41,9 +46,6 @@ if (isset($_POST['username'])){
         header("Location: index.php"); // Redirect user to index.php
     } else{
         echo "<div class='form'><h3>Username/password is incorrect.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
-    }  if($username="Abaas" & $password="admin") {
-        $_SESSION['username'] = $username;
-        header("location: index.php");
     }
 }else{
     ?>
