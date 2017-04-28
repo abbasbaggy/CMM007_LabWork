@@ -5,7 +5,7 @@
  * Date: 3/18/2017
  * Time: 11:50 PM
  */
-include ("scripts/db_connect.php");
+include("scripts/db_connect.php");
 include ("scripts/header.php");
 
 echo"
